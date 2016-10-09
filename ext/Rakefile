@@ -1,6 +1,7 @@
 
 require 'mime/types/data'
 require 'trenni'
+require 'json'
 
 class TemplateState < Struct.new(:mime_types)
 	NULL = 'NULL'
