@@ -1,8 +1,8 @@
 
 struct MimeType {
-	char * const content_type;
-	char * const encoding;
-	char ** const extensions;
+	const char * const content_type;
+	const char * const encoding;
+	const char ** const extensions;
 	unsigned registered;
 };
 
@@ -46,7 +46,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/access",
 		.encoding = "base64",
-		.extensions = (char*[]){"mdf", "mda", "mdb", "mde", 0},
+		.extensions = (const char*[]){"mdf", "mda", "mdb", "mde", 0},
 		.registered = 0,
 	},
 
@@ -137,7 +137,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/andrew-inset",
 		.encoding = "base64",
-		.extensions = (char*[]){"ez", 0},
+		.extensions = (const char*[]){"ez", 0},
 		.registered = 1,
 	},
 
@@ -158,7 +158,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/applixware",
 		.encoding = "base64",
-		.extensions = (char*[]){"aw", 0},
+		.extensions = (const char*[]){"aw", 0},
 		.registered = 0,
 	},
 
@@ -179,14 +179,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/atom+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"atom", 0},
+		.extensions = (const char*[]){"atom", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/atomcat+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"atomcat", 0},
+		.extensions = (const char*[]){"atomcat", 0},
 		.registered = 1,
 	},
 
@@ -207,7 +207,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/atomsvc+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"atomsvc", 0},
+		.extensions = (const char*[]){"atomsvc", 0},
 		.registered = 1,
 	},
 
@@ -249,7 +249,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/bleeper",
 		.encoding = "base64",
-		.extensions = (char*[]){"bleep", 0},
+		.extensions = (const char*[]){"bleep", 0},
 		.registered = 0,
 	},
 
@@ -305,7 +305,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/ccxml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"ccxml", 0},
+		.extensions = (const char*[]){"ccxml", 0},
 		.registered = 1,
 	},
 
@@ -319,35 +319,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/cdmi-capability",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdmia", 0},
+		.extensions = (const char*[]){"cdmia", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/cdmi-container",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdmic", 0},
+		.extensions = (const char*[]){"cdmic", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/cdmi-domain",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdmid", 0},
+		.extensions = (const char*[]){"cdmid", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/cdmi-object",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdmio", 0},
+		.extensions = (const char*[]){"cdmio", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/cdmi-queue",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdmiq", 0},
+		.extensions = (const char*[]){"cdmiq", 0},
 		.registered = 1,
 	},
 
@@ -466,7 +466,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/cu-seeme",
 		.encoding = "base64",
-		.extensions = (char*[]){"cu", 0},
+		.extensions = (const char*[]){"cu", 0},
 		.registered = 0,
 	},
 
@@ -494,7 +494,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/davmount+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"davmount", 0},
+		.extensions = (const char*[]){"davmount", 0},
 		.registered = 1,
 	},
 
@@ -529,7 +529,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/dicom",
 		.encoding = "base64",
-		.extensions = (char*[]){"dcm", 0},
+		.extensions = (const char*[]){"dcm", 0},
 		.registered = 1,
 	},
 
@@ -557,7 +557,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/docbook+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"dbk", 0},
+		.extensions = (const char*[]){"dbk", 0},
 		.registered = 0,
 	},
 
@@ -578,14 +578,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/dssc+der",
 		.encoding = "base64",
-		.extensions = (char*[]){"dssc", 0},
+		.extensions = (const char*[]){"dssc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/dssc+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xdssc", 0},
+		.extensions = (const char*[]){"xdssc", 0},
 		.registered = 1,
 	},
 
@@ -606,7 +606,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/ecmascript",
 		.encoding = "base64",
-		.extensions = (char*[]){"ecma", 0},
+		.extensions = (const char*[]){"ecma", 0},
 		.registered = 1,
 	},
 
@@ -676,7 +676,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/emma+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"emma", 0},
+		.extensions = (const char*[]){"emma", 0},
 		.registered = 1,
 	},
 
@@ -704,7 +704,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/epub+zip",
 		.encoding = "base64",
-		.extensions = (char*[]){"epub", 0},
+		.extensions = (const char*[]){"epub", 0},
 		.registered = 1,
 	},
 
@@ -725,14 +725,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/excel",
 		.encoding = "base64",
-		.extensions = (char*[]){"xls", "xlt", 0},
+		.extensions = (const char*[]){"xls", "xlt", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/exi",
 		.encoding = "base64",
-		.extensions = (char*[]){"exi", 0},
+		.extensions = (const char*[]){"exi", 0},
 		.registered = 1,
 	},
 
@@ -767,21 +767,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/font-sfnt",
 		.encoding = "base64",
-		.extensions = (char*[]){"otf", "ttf", 0},
+		.extensions = (const char*[]){"otf", "ttf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/font-tdpfr",
 		.encoding = "base64",
-		.extensions = (char*[]){"pfr", 0},
+		.extensions = (const char*[]){"pfr", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/font-woff",
 		.encoding = "base64",
-		.extensions = (char*[]){"woff", "woff2", 0},
+		.extensions = (const char*[]){"woff", "woff2", 0},
 		.registered = 1,
 	},
 
@@ -802,7 +802,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/futuresplash",
 		.encoding = "base64",
-		.extensions = (char*[]){"spl", 0},
+		.extensions = (const char*[]){"spl", 0},
 		.registered = 0,
 	},
 
@@ -816,28 +816,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/gml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"gml", 0},
+		.extensions = (const char*[]){"gml", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/gpx+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"gpx", 0},
+		.extensions = (const char*[]){"gpx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/gxf",
 		.encoding = "base64",
-		.extensions = (char*[]){"gxf", 0},
+		.extensions = (const char*[]){"gxf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/gzip",
 		.encoding = "base64",
-		.extensions = (char*[]){"gz", 0},
+		.extensions = (const char*[]){"gz", 0},
 		.registered = 1,
 	},
 
@@ -858,7 +858,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/hep",
 		.encoding = "base64",
-		.extensions = (char*[]){"hep", 0},
+		.extensions = (const char*[]){"hep", 0},
 		.registered = 0,
 	},
 
@@ -872,7 +872,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/hyperstudio",
 		.encoding = "base64",
-		.extensions = (char*[]){"stk", 0},
+		.extensions = (const char*[]){"stk", 0},
 		.registered = 1,
 	},
 
@@ -921,7 +921,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/imagemap",
 		.encoding = "8bit",
-		.extensions = (char*[]){"imagemap", "imap", 0},
+		.extensions = (const char*[]){"imagemap", "imap", 0},
 		.registered = 0,
 	},
 
@@ -963,7 +963,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/inkml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"ink", "inkml", 0},
+		.extensions = (const char*[]){"ink", "inkml", 0},
 		.registered = 1,
 	},
 
@@ -977,7 +977,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/ipfix",
 		.encoding = "base64",
-		.extensions = (char*[]){"ipfix", 0},
+		.extensions = (const char*[]){"ipfix", 0},
 		.registered = 1,
 	},
 
@@ -1005,28 +1005,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/java-archive",
 		.encoding = "base64",
-		.extensions = (char*[]){"jar", 0},
+		.extensions = (const char*[]){"jar", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/java-serialized-object",
 		.encoding = "base64",
-		.extensions = (char*[]){"ser", 0},
+		.extensions = (const char*[]){"ser", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/java-vm",
 		.encoding = "base64",
-		.extensions = (char*[]){"class", 0},
+		.extensions = (const char*[]){"class", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/javascript",
 		.encoding = "8bit",
-		.extensions = (char*[]){"js", "sj", 0},
+		.extensions = (const char*[]){"js", "sj", 0},
 		.registered = 1,
 	},
 
@@ -1054,7 +1054,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/json",
 		.encoding = "8bit",
-		.extensions = (char*[]){"json", 0},
+		.extensions = (const char*[]){"json", 0},
 		.registered = 1,
 	},
 
@@ -1075,7 +1075,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/jsonml+json",
 		.encoding = "base64",
-		.extensions = (char*[]){"jsonml", 0},
+		.extensions = (const char*[]){"jsonml", 0},
 		.registered = 0,
 	},
 
@@ -1138,7 +1138,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/lost+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"lostxml", 0},
+		.extensions = (const char*[]){"lostxml", 0},
 		.registered = 1,
 	},
 
@@ -1152,7 +1152,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/lotus-123",
 		.encoding = "base64",
-		.extensions = (char*[]){"wks", 0},
+		.extensions = (const char*[]){"wks", 0},
 		.registered = 0,
 	},
 
@@ -1166,14 +1166,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mac-binhex40",
 		.encoding = "8bit",
-		.extensions = (char*[]){"hqx", 0},
+		.extensions = (const char*[]){"hqx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/mac-compactpro",
 		.encoding = "base64",
-		.extensions = (char*[]){"cpt", 0},
+		.extensions = (const char*[]){"cpt", 0},
 		.registered = 0,
 	},
 
@@ -1194,35 +1194,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mads+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mads", 0},
+		.extensions = (const char*[]){"mads", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/marc",
 		.encoding = "base64",
-		.extensions = (char*[]){"mrc", 0},
+		.extensions = (const char*[]){"mrc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/marcxml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mrcx", 0},
+		.extensions = (const char*[]){"mrcx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/mathcad",
 		.encoding = "base64",
-		.extensions = (char*[]){"mcd", 0},
+		.extensions = (const char*[]){"mcd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/mathematica",
 		.encoding = "base64",
-		.extensions = (char*[]){"ma", "mb", "nb", 0},
+		.extensions = (const char*[]){"ma", "mb", "nb", 0},
 		.registered = 1,
 	},
 
@@ -1236,7 +1236,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mathml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mathml", 0},
+		.extensions = (const char*[]){"mathml", 0},
 		.registered = 1,
 	},
 
@@ -1334,7 +1334,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mbox",
 		.encoding = "base64",
-		.extensions = (char*[]){"mbox", 0},
+		.extensions = (const char*[]){"mbox", 0},
 		.registered = 1,
 	},
 
@@ -1355,7 +1355,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mediaservercontrol+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mscml", 0},
+		.extensions = (const char*[]){"mscml", 0},
 		.registered = 1,
 	},
 
@@ -1369,21 +1369,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/metalink+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"metalink", 0},
+		.extensions = (const char*[]){"metalink", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/metalink4+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"meta4", 0},
+		.extensions = (const char*[]){"meta4", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/mets+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mets", 0},
+		.extensions = (const char*[]){"mets", 0},
 		.registered = 1,
 	},
 
@@ -1404,7 +1404,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mods+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mods", 0},
+		.extensions = (const char*[]){"mods", 0},
 		.registered = 1,
 	},
 
@@ -1439,14 +1439,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/mp21",
 		.encoding = "base64",
-		.extensions = (char*[]){"m21", "mp21", 0},
+		.extensions = (const char*[]){"m21", "mp21", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/mp4",
 		.encoding = "base64",
-		.extensions = (char*[]){"mp4", "mpg4", "mp4s", 0},
+		.extensions = (const char*[]){"mp4", "mpg4", "mp4s", 0},
 		.registered = 1,
 	},
 
@@ -1502,14 +1502,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/msword",
 		.encoding = "base64",
-		.extensions = (char*[]){"doc", "dot", "wrd", 0},
+		.extensions = (const char*[]){"doc", "dot", "wrd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/mxf",
 		.encoding = "base64",
-		.extensions = (char*[]){"mxf", 0},
+		.extensions = (const char*[]){"mxf", 0},
 		.registered = 1,
 	},
 
@@ -1523,7 +1523,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/netcdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"nc", "cdf", 0},
+		.extensions = (const char*[]){"nc", "cdf", 0},
 		.registered = 0,
 	},
 
@@ -1586,14 +1586,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/octet-stream",
 		.encoding = "base64",
-		.extensions = (char*[]){"bin", "dms", "lha", "lzh", "exe", "class", "ani", "pgp", "gpg", "so", "dll", "dylib", "bpk", "deploy", "dist", "distz", "dump", "elc", "lrf", "mar", "pkg", 0},
+		.extensions = (const char*[]){"bin", "dms", "lha", "lzh", "exe", "class", "ani", "pgp", "gpg", "so", "dll", "dylib", "bpk", "deploy", "dist", "distz", "dump", "elc", "lrf", "mar", "pkg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/oda",
 		.encoding = "base64",
-		.extensions = (char*[]){"oda", 0},
+		.extensions = (const char*[]){"oda", 0},
 		.registered = 1,
 	},
 
@@ -1607,35 +1607,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/oebps-package+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"opf", 0},
+		.extensions = (const char*[]){"opf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/ogg",
 		.encoding = "base64",
-		.extensions = (char*[]){"ogx", 0},
+		.extensions = (const char*[]){"ogx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/omdoc+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"omdoc", 0},
+		.extensions = (const char*[]){"omdoc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/onenote",
 		.encoding = "base64",
-		.extensions = (char*[]){"onepkg", "onetmp", "onetoc", "onetoc2", 0},
+		.extensions = (const char*[]){"onepkg", "onetmp", "onetoc", "onetoc2", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/oxps",
 		.encoding = "base64",
-		.extensions = (char*[]){"oxps", 0},
+		.extensions = (const char*[]){"oxps", 0},
 		.registered = 1,
 	},
 
@@ -1656,14 +1656,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/patch-ops-error+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xer", 0},
+		.extensions = (const char*[]){"xer", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"pdf", 0},
+		.extensions = (const char*[]){"pdf", 0},
 		.registered = 1,
 	},
 
@@ -1677,7 +1677,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/pgp-encrypted",
 		.encoding = "7bit",
-		.extensions = (char*[]){"pgp", "gpg", 0},
+		.extensions = (const char*[]){"pgp", "gpg", 0},
 		.registered = 1,
 	},
 
@@ -1691,14 +1691,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/pgp-signature",
 		.encoding = "base64",
-		.extensions = (char*[]){"asc", "sig", 0},
+		.extensions = (const char*[]){"asc", "sig", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pics-rules",
 		.encoding = "base64",
-		.extensions = (char*[]){"prf", 0},
+		.extensions = (const char*[]){"prf", 0},
 		.registered = 0,
 	},
 
@@ -1719,7 +1719,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/pkcs10",
 		.encoding = "base64",
-		.extensions = (char*[]){"p10", 0},
+		.extensions = (const char*[]){"p10", 0},
 		.registered = 1,
 	},
 
@@ -1733,63 +1733,63 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/pkcs7-mime",
 		.encoding = "base64",
-		.extensions = (char*[]){"p7m", "p7c", 0},
+		.extensions = (const char*[]){"p7m", "p7c", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkcs7-signature",
 		.encoding = "base64",
-		.extensions = (char*[]){"p7s", 0},
+		.extensions = (const char*[]){"p7s", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkcs8",
 		.encoding = "base64",
-		.extensions = (char*[]){"p8", 0},
+		.extensions = (const char*[]){"p8", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkix-attr-cert",
 		.encoding = "base64",
-		.extensions = (char*[]){"ac", 0},
+		.extensions = (const char*[]){"ac", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkix-cert",
 		.encoding = "base64",
-		.extensions = (char*[]){"cer", 0},
+		.extensions = (const char*[]){"cer", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkix-crl",
 		.encoding = "base64",
-		.extensions = (char*[]){"crl", 0},
+		.extensions = (const char*[]){"crl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkix-pkipath",
 		.encoding = "base64",
-		.extensions = (char*[]){"pkipath", 0},
+		.extensions = (const char*[]){"pkipath", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pkixcmp",
 		.encoding = "base64",
-		.extensions = (char*[]){"pki", 0},
+		.extensions = (const char*[]){"pki", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/pls+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"pls", 0},
+		.extensions = (const char*[]){"pls", 0},
 		.registered = 1,
 	},
 
@@ -1803,14 +1803,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/postscript",
 		.encoding = "8bit",
-		.extensions = (char*[]){"ai", "eps", "ps", 0},
+		.extensions = (const char*[]){"ai", "eps", "ps", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/powerpoint",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppt", "pps", "pot", 0},
+		.extensions = (const char*[]){"ppt", "pps", "pot", 0},
 		.registered = 0,
 	},
 
@@ -1859,7 +1859,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/prs.cww",
 		.encoding = "base64",
-		.extensions = (char*[]){"cw", "cww", 0},
+		.extensions = (const char*[]){"cw", "cww", 0},
 		.registered = 1,
 	},
 
@@ -1873,7 +1873,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/prs.nprend",
 		.encoding = "base64",
-		.extensions = (char*[]){"rnd", "rct", 0},
+		.extensions = (const char*[]){"rnd", "rct", 0},
 		.registered = 1,
 	},
 
@@ -1901,7 +1901,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/pskc+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"pskcxml", 0},
+		.extensions = (const char*[]){"pskcxml", 0},
 		.registered = 1,
 	},
 
@@ -1915,7 +1915,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/quicktimeplayer",
 		.encoding = "base64",
-		.extensions = (char*[]){"qtl", 0},
+		.extensions = (const char*[]){"qtl", 0},
 		.registered = 0,
 	},
 
@@ -1936,21 +1936,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/rdf+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"rdf", 0},
+		.extensions = (const char*[]){"rdf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/reginfo+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"rif", 0},
+		.extensions = (const char*[]){"rif", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/relax-ng-compact-syntax",
 		.encoding = "base64",
-		.extensions = (char*[]){"rnc", 0},
+		.extensions = (const char*[]){"rnc", 0},
 		.registered = 1,
 	},
 
@@ -1978,14 +1978,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/resource-lists+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"rl", 0},
+		.extensions = (const char*[]){"rl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/resource-lists-diff+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"rld", 0},
+		.extensions = (const char*[]){"rld", 0},
 		.registered = 1,
 	},
 
@@ -2013,28 +2013,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/rls-services+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"rs", 0},
+		.extensions = (const char*[]){"rs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/rpki-ghostbusters",
 		.encoding = "base64",
-		.extensions = (char*[]){"gbr", 0},
+		.extensions = (const char*[]){"gbr", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/rpki-manifest",
 		.encoding = "base64",
-		.extensions = (char*[]){"mft", 0},
+		.extensions = (const char*[]){"mft", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/rpki-roa",
 		.encoding = "base64",
-		.extensions = (char*[]){"roa", 0},
+		.extensions = (const char*[]){"roa", 0},
 		.registered = 1,
 	},
 
@@ -2048,21 +2048,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/rsd+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"rsd", 0},
+		.extensions = (const char*[]){"rsd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/rss+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"rss", 0},
+		.extensions = (const char*[]){"rss", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/rtf",
 		.encoding = "base64",
-		.extensions = (char*[]){"rtf", 0},
+		.extensions = (const char*[]){"rtf", 0},
 		.registered = 1,
 	},
 
@@ -2097,7 +2097,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/sbml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"sbml", 0},
+		.extensions = (const char*[]){"sbml", 0},
 		.registered = 1,
 	},
 
@@ -2118,35 +2118,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/scvp-cv-request",
 		.encoding = "base64",
-		.extensions = (char*[]){"scq", 0},
+		.extensions = (const char*[]){"scq", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/scvp-cv-response",
 		.encoding = "base64",
-		.extensions = (char*[]){"scs", 0},
+		.extensions = (const char*[]){"scs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/scvp-vp-request",
 		.encoding = "base64",
-		.extensions = (char*[]){"spq", 0},
+		.extensions = (const char*[]){"spq", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/scvp-vp-response",
 		.encoding = "base64",
-		.extensions = (char*[]){"spp", 0},
+		.extensions = (const char*[]){"spp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/sdp",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdp", 0},
+		.extensions = (const char*[]){"sdp", 0},
 		.registered = 1,
 	},
 
@@ -2188,7 +2188,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/set-payment-initiation",
 		.encoding = "base64",
-		.extensions = (char*[]){"setpay", 0},
+		.extensions = (const char*[]){"setpay", 0},
 		.registered = 1,
 	},
 
@@ -2202,35 +2202,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/set-registration-initiation",
 		.encoding = "base64",
-		.extensions = (char*[]){"setreg", 0},
+		.extensions = (const char*[]){"setreg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/sgml",
 		.encoding = "base64",
-		.extensions = (char*[]){"sgml", 0},
+		.extensions = (const char*[]){"sgml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/sgml-open-catalog",
 		.encoding = "base64",
-		.extensions = (char*[]){"soc", 0},
+		.extensions = (const char*[]){"soc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/shf+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"shf", 0},
+		.extensions = (const char*[]){"shf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/sieve",
 		.encoding = "base64",
-		.extensions = (char*[]){"siv", 0},
+		.extensions = (const char*[]){"siv", 0},
 		.registered = 1,
 	},
 
@@ -2272,14 +2272,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/smil",
 		.encoding = "8bit",
-		.extensions = (char*[]){"smi", "smil", 0},
+		.extensions = (const char*[]){"smi", "smil", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/smil+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"smi", "smil", 0},
+		.extensions = (const char*[]){"smi", "smil", 0},
 		.registered = 1,
 	},
 
@@ -2314,14 +2314,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/sparql-query",
 		.encoding = "base64",
-		.extensions = (char*[]){"rq", 0},
+		.extensions = (const char*[]){"rq", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/sparql-results+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"srx", 0},
+		.extensions = (const char*[]){"srx", 0},
 		.registered = 1,
 	},
 
@@ -2342,35 +2342,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/srgs",
 		.encoding = "base64",
-		.extensions = (char*[]){"gram", 0},
+		.extensions = (const char*[]){"gram", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/srgs+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"grxml", 0},
+		.extensions = (const char*[]){"grxml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/sru+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"sru", 0},
+		.extensions = (const char*[]){"sru", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/ssdl+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"ssdl", 0},
+		.extensions = (const char*[]){"ssdl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/ssml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"ssml", 0},
+		.extensions = (const char*[]){"ssml", 0},
 		.registered = 1,
 	},
 
@@ -2461,14 +2461,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/tei+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"tei", "teicorpus", 0},
+		.extensions = (const char*[]){"tei", "teicorpus", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/thraud+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"tfi", 0},
+		.extensions = (const char*[]){"tfi", 0},
 		.registered = 1,
 	},
 
@@ -2489,14 +2489,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/timestamped-data",
 		.encoding = "base64",
-		.extensions = (char*[]){"tsd", 0},
+		.extensions = (const char*[]){"tsd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/toolbook",
 		.encoding = "base64",
-		.extensions = (char*[]){"tbk", 0},
+		.extensions = (const char*[]){"tbk", 0},
 		.registered = 0,
 	},
 
@@ -2580,7 +2580,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/VMSBACKUP",
 		.encoding = "base64",
-		.extensions = (char*[]){"bck", 0},
+		.extensions = (const char*[]){"bck", 0},
 		.registered = 0,
 	},
 
@@ -2622,28 +2622,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.3gpp.pic-bw-large",
 		.encoding = "base64",
-		.extensions = (char*[]){"plb", 0},
+		.extensions = (const char*[]){"plb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.3gpp.pic-bw-small",
 		.encoding = "base64",
-		.extensions = (char*[]){"psb", 0},
+		.extensions = (const char*[]){"psb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.3gpp.pic-bw-var",
 		.encoding = "base64",
-		.extensions = (char*[]){"pvb", 0},
+		.extensions = (const char*[]){"pvb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.3gpp.sms",
 		.encoding = "base64",
-		.extensions = (char*[]){"sms", 0},
+		.extensions = (const char*[]){"sms", 0},
 		.registered = 1,
 	},
 
@@ -2699,7 +2699,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.3gpp2.tcap",
 		.encoding = "base64",
-		.extensions = (char*[]){"tcap", 0},
+		.extensions = (const char*[]){"tcap", 0},
 		.registered = 1,
 	},
 
@@ -2713,42 +2713,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.3M.Post-it-Notes",
 		.encoding = "base64",
-		.extensions = (char*[]){"pwn", 0},
+		.extensions = (const char*[]){"pwn", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.accpac.simply.aso",
 		.encoding = "base64",
-		.extensions = (char*[]){"aso", 0},
+		.extensions = (const char*[]){"aso", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.accpac.simply.imp",
 		.encoding = "base64",
-		.extensions = (char*[]){"imp", 0},
+		.extensions = (const char*[]){"imp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.acucobol",
 		.encoding = "base64",
-		.extensions = (char*[]){"acu", 0},
+		.extensions = (const char*[]){"acu", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.acucorp",
 		.encoding = "7bit",
-		.extensions = (char*[]){"atc", "acutc", 0},
+		.extensions = (const char*[]){"atc", "acutc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.adobe.air-application-installer-package+zip",
 		.encoding = "base64",
-		.extensions = (char*[]){"air", 0},
+		.extensions = (const char*[]){"air", 0},
 		.registered = 0,
 	},
 
@@ -2762,14 +2762,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.adobe.formscentral.fcdt",
 		.encoding = "base64",
-		.extensions = (char*[]){"fcdt", 0},
+		.extensions = (const char*[]){"fcdt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.adobe.fxp",
 		.encoding = "base64",
-		.extensions = (char*[]){"fxp", "fxpl", 0},
+		.extensions = (const char*[]){"fxp", "fxpl", 0},
 		.registered = 1,
 	},
 
@@ -2783,14 +2783,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.adobe.xdp+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xdp", 0},
+		.extensions = (const char*[]){"xdp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.adobe.xfdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"xfdf", 0},
+		.extensions = (const char*[]){"xfdf", 0},
 		.registered = 1,
 	},
 
@@ -2811,42 +2811,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ahead.space",
 		.encoding = "base64",
-		.extensions = (char*[]){"ahead", 0},
+		.extensions = (const char*[]){"ahead", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.airzip.filesecure.azf",
 		.encoding = "base64",
-		.extensions = (char*[]){"azf", 0},
+		.extensions = (const char*[]){"azf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.airzip.filesecure.azs",
 		.encoding = "base64",
-		.extensions = (char*[]){"azs", 0},
+		.extensions = (const char*[]){"azs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.amazon.ebook",
 		.encoding = "base64",
-		.extensions = (char*[]){"azw", 0},
+		.extensions = (const char*[]){"azw", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.americandynamics.acc",
 		.encoding = "base64",
-		.extensions = (char*[]){"acc", 0},
+		.extensions = (const char*[]){"acc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.amiga.ami",
 		.encoding = "base64",
-		.extensions = (char*[]){"ami", 0},
+		.extensions = (const char*[]){"ami", 0},
 		.registered = 1,
 	},
 
@@ -2860,7 +2860,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.android.package-archive",
 		.encoding = "base64",
-		.extensions = (char*[]){"apk", 0},
+		.extensions = (const char*[]){"apk", 0},
 		.registered = 0,
 	},
 
@@ -2874,21 +2874,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.anser-web-certificate-issue-initiation",
 		.encoding = "base64",
-		.extensions = (char*[]){"cii", 0},
+		.extensions = (const char*[]){"cii", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.anser-web-funds-transfer-initiation",
 		.encoding = "base64",
-		.extensions = (char*[]){"fti", 0},
+		.extensions = (const char*[]){"fti", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.antix.game-component",
 		.encoding = "base64",
-		.extensions = (char*[]){"atx", 0},
+		.extensions = (const char*[]){"atx", 0},
 		.registered = 1,
 	},
 
@@ -2923,21 +2923,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.apple.installer+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpkg", 0},
+		.extensions = (const char*[]){"mpkg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.apple.mpegurl",
 		.encoding = "base64",
-		.extensions = (char*[]){"m3u8", 0},
+		.extensions = (const char*[]){"m3u8", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.apple.pkpass",
 		.encoding = "base64",
-		.extensions = (char*[]){"pkpass", 0},
+		.extensions = (const char*[]){"pkpass", 0},
 		.registered = 0,
 	},
 
@@ -2951,7 +2951,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.aristanetworks.swi",
 		.encoding = "base64",
-		.extensions = (char*[]){"swi", 0},
+		.extensions = (const char*[]){"swi", 0},
 		.registered = 1,
 	},
 
@@ -2965,14 +2965,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.astraea-software.iota",
 		.encoding = "base64",
-		.extensions = (char*[]){"iota", 0},
+		.extensions = (const char*[]){"iota", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.audiograph",
 		.encoding = "base64",
-		.extensions = (char*[]){"aep", 0},
+		.extensions = (const char*[]){"aep", 0},
 		.registered = 1,
 	},
 
@@ -3021,7 +3021,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.blueice.multipass",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpm", 0},
+		.extensions = (const char*[]){"mpm", 0},
 		.registered = 1,
 	},
 
@@ -3042,14 +3042,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.bmi",
 		.encoding = "base64",
-		.extensions = (char*[]){"bmi", 0},
+		.extensions = (const char*[]){"bmi", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.businessobjects",
 		.encoding = "base64",
-		.extensions = (char*[]){"rep", 0},
+		.extensions = (const char*[]){"rep", 0},
 		.registered = 1,
 	},
 
@@ -3091,21 +3091,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.chemdraw+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdxml", 0},
+		.extensions = (const char*[]){"cdxml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.chipnuts.karaoke-mmd",
 		.encoding = "base64",
-		.extensions = (char*[]){"mmd", 0},
+		.extensions = (const char*[]){"mmd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.cinderella",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdy", 0},
+		.extensions = (const char*[]){"cdy", 0},
 		.registered = 1,
 	},
 
@@ -3126,35 +3126,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.claymore",
 		.encoding = "base64",
-		.extensions = (char*[]){"cla", 0},
+		.extensions = (const char*[]){"cla", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.cloanto.rp9",
 		.encoding = "base64",
-		.extensions = (char*[]){"rp9", 0},
+		.extensions = (const char*[]){"rp9", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.clonk.c4group",
 		.encoding = "base64",
-		.extensions = (char*[]){"c4d", "c4f", "c4g", "c4p", "c4u", 0},
+		.extensions = (const char*[]){"c4d", "c4f", "c4g", "c4p", "c4u", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.cluetrust.cartomobile-config",
 		.encoding = "base64",
-		.extensions = (char*[]){"c11amc", 0},
+		.extensions = (const char*[]){"c11amc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.cluetrust.cartomobile-config-pkg",
 		.encoding = "base64",
-		.extensions = (char*[]){"c11amz", 0},
+		.extensions = (const char*[]){"c11amz", 0},
 		.registered = 1,
 	},
 
@@ -3196,14 +3196,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.commonspace",
 		.encoding = "base64",
-		.extensions = (char*[]){"csp", 0},
+		.extensions = (const char*[]){"csp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.contact.cmsg",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdbcmsg", 0},
+		.extensions = (const char*[]){"cdbcmsg", 0},
 		.registered = 1,
 	},
 
@@ -3217,56 +3217,56 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.cosmocaller",
 		.encoding = "base64",
-		.extensions = (char*[]){"cmc", 0},
+		.extensions = (const char*[]){"cmc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.crick.clicker",
 		.encoding = "base64",
-		.extensions = (char*[]){"clkx", 0},
+		.extensions = (const char*[]){"clkx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.crick.clicker.keyboard",
 		.encoding = "base64",
-		.extensions = (char*[]){"clkk", 0},
+		.extensions = (const char*[]){"clkk", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.crick.clicker.palette",
 		.encoding = "base64",
-		.extensions = (char*[]){"clkp", 0},
+		.extensions = (const char*[]){"clkp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.crick.clicker.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"clkt", 0},
+		.extensions = (const char*[]){"clkt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.crick.clicker.wordbank",
 		.encoding = "base64",
-		.extensions = (char*[]){"clkw", 0},
+		.extensions = (const char*[]){"clkw", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.criticaltools.wbs+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wbs", 0},
+		.extensions = (const char*[]){"wbs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ctc-posml",
 		.encoding = "base64",
-		.extensions = (char*[]){"pml", 0},
+		.extensions = (const char*[]){"pml", 0},
 		.registered = 1,
 	},
 
@@ -3294,7 +3294,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.cups-ppd",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppd", 0},
+		.extensions = (const char*[]){"ppd", 0},
 		.registered = 1,
 	},
 
@@ -3315,21 +3315,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.curl",
 		.encoding = "base64",
-		.extensions = (char*[]){"curl", 0},
+		.extensions = (const char*[]){"curl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.curl.car",
 		.encoding = "base64",
-		.extensions = (char*[]){"car", 0},
+		.extensions = (const char*[]){"car", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.curl.pcurl",
 		.encoding = "base64",
-		.extensions = (char*[]){"pcurl", 0},
+		.extensions = (const char*[]){"pcurl", 0},
 		.registered = 0,
 	},
 
@@ -3350,14 +3350,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dart",
 		.encoding = "base64",
-		.extensions = (char*[]){"dart", 0},
+		.extensions = (const char*[]){"dart", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.data-vision.rdz",
 		.encoding = "base64",
-		.extensions = (char*[]){"rdz", 0},
+		.extensions = (const char*[]){"rdz", 0},
 		.registered = 1,
 	},
 
@@ -3371,35 +3371,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dece.data",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvd", "uvf", "uvvd", "uvvf", 0},
+		.extensions = (const char*[]){"uvd", "uvf", "uvvd", "uvvf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.dece.ttml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvt", "uvvt", 0},
+		.extensions = (const char*[]){"uvt", "uvvt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.dece.unspecified",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvvx", "uvx", 0},
+		.extensions = (const char*[]){"uvvx", "uvx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.dece.zip",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvvz", "uvz", 0},
+		.extensions = (const char*[]){"uvvz", "uvz", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.denovo.fcselayout-link",
 		.encoding = "base64",
-		.extensions = (char*[]){"fe_launch", 0},
+		.extensions = (const char*[]){"fe_launch", 0},
 		.registered = 1,
 	},
 
@@ -3427,7 +3427,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dna",
 		.encoding = "base64",
-		.extensions = (char*[]){"dna", 0},
+		.extensions = (const char*[]){"dna", 0},
 		.registered = 1,
 	},
 
@@ -3441,7 +3441,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dolby.mlp",
 		.encoding = "base64",
-		.extensions = (char*[]){"mlp", 0},
+		.extensions = (const char*[]){"mlp", 0},
 		.registered = 0,
 	},
 
@@ -3469,14 +3469,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dpgraph",
 		.encoding = "base64",
-		.extensions = (char*[]){"dpg", 0},
+		.extensions = (const char*[]){"dpg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.dreamfactory",
 		.encoding = "base64",
-		.extensions = (char*[]){"dfac", 0},
+		.extensions = (const char*[]){"dfac", 0},
 		.registered = 1,
 	},
 
@@ -3490,7 +3490,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ds-keypoint",
 		.encoding = "base64",
-		.extensions = (char*[]){"kpxx", 0},
+		.extensions = (const char*[]){"kpxx", 0},
 		.registered = 0,
 	},
 
@@ -3518,7 +3518,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dvb.ait",
 		.encoding = "base64",
-		.extensions = (char*[]){"ait", 0},
+		.extensions = (const char*[]){"ait", 0},
 		.registered = 1,
 	},
 
@@ -3644,7 +3644,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dvb.service",
 		.encoding = "base64",
-		.extensions = (char*[]){"svc", 0},
+		.extensions = (const char*[]){"svc", 0},
 		.registered = 1,
 	},
 
@@ -3658,7 +3658,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.dynageo",
 		.encoding = "base64",
-		.extensions = (char*[]){"geo", 0},
+		.extensions = (const char*[]){"geo", 0},
 		.registered = 1,
 	},
 
@@ -3686,7 +3686,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ecowin.chart",
 		.encoding = "base64",
-		.extensions = (char*[]){"mag", 0},
+		.extensions = (const char*[]){"mag", 0},
 		.registered = 1,
 	},
 
@@ -3735,7 +3735,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.enliven",
 		.encoding = "base64",
-		.extensions = (char*[]){"nml", 0},
+		.extensions = (const char*[]){"nml", 0},
 		.registered = 1,
 	},
 
@@ -3756,35 +3756,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.epson.esf",
 		.encoding = "base64",
-		.extensions = (char*[]){"esf", 0},
+		.extensions = (const char*[]){"esf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.epson.msf",
 		.encoding = "base64",
-		.extensions = (char*[]){"msf", 0},
+		.extensions = (const char*[]){"msf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.epson.quickanime",
 		.encoding = "base64",
-		.extensions = (char*[]){"qam", 0},
+		.extensions = (const char*[]){"qam", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.epson.salt",
 		.encoding = "base64",
-		.extensions = (char*[]){"slt", 0},
+		.extensions = (const char*[]){"slt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.epson.ssf",
 		.encoding = "base64",
-		.extensions = (char*[]){"ssf", 0},
+		.extensions = (const char*[]){"ssf", 0},
 		.registered = 1,
 	},
 
@@ -3798,7 +3798,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.eszigno3+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"es3", "et3", 0},
+		.extensions = (const char*[]){"es3", "et3", 0},
 		.registered = 1,
 	},
 
@@ -3966,14 +3966,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ezpix-album",
 		.encoding = "base64",
-		.extensions = (char*[]){"ez2", 0},
+		.extensions = (const char*[]){"ez2", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ezpix-package",
 		.encoding = "base64",
-		.extensions = (char*[]){"ez3", 0},
+		.extensions = (const char*[]){"ez3", 0},
 		.registered = 1,
 	},
 
@@ -3994,21 +3994,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.fdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"fdf", 0},
+		.extensions = (const char*[]){"fdf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fdsn.mseed",
 		.encoding = "base64",
-		.extensions = (char*[]){"mseed", 0},
+		.extensions = (const char*[]){"mseed", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fdsn.seed",
 		.encoding = "base64",
-		.extensions = (char*[]){"dataless", "seed", 0},
+		.extensions = (const char*[]){"dataless", "seed", 0},
 		.registered = 1,
 	},
 
@@ -4043,14 +4043,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.FloGraphIt",
 		.encoding = "base64",
-		.extensions = (char*[]){"gph", 0},
+		.extensions = (const char*[]){"gph", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fluxtime.clip",
 		.encoding = "base64",
-		.extensions = (char*[]){"ftc", 0},
+		.extensions = (const char*[]){"ftc", 0},
 		.registered = 1,
 	},
 
@@ -4064,63 +4064,63 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.framemaker",
 		.encoding = "base64",
-		.extensions = (char*[]){"frm", "maker", "frame", "fm", "fb", "book", "fbdoc", 0},
+		.extensions = (const char*[]){"frm", "maker", "frame", "fm", "fb", "book", "fbdoc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.frogans.fnc",
 		.encoding = "base64",
-		.extensions = (char*[]){"fnc", 0},
+		.extensions = (const char*[]){"fnc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.frogans.ltf",
 		.encoding = "base64",
-		.extensions = (char*[]){"ltf", 0},
+		.extensions = (const char*[]){"ltf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fsc.weblaunch",
 		.encoding = "7bit",
-		.extensions = (char*[]){"fsc", 0},
+		.extensions = (const char*[]){"fsc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujitsu.oasys",
 		.encoding = "base64",
-		.extensions = (char*[]){"oas", 0},
+		.extensions = (const char*[]){"oas", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujitsu.oasys2",
 		.encoding = "base64",
-		.extensions = (char*[]){"oa2", 0},
+		.extensions = (const char*[]){"oa2", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujitsu.oasys3",
 		.encoding = "base64",
-		.extensions = (char*[]){"oa3", 0},
+		.extensions = (const char*[]){"oa3", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujitsu.oasysgp",
 		.encoding = "base64",
-		.extensions = (char*[]){"fg5", 0},
+		.extensions = (const char*[]){"fg5", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujitsu.oasysprs",
 		.encoding = "base64",
-		.extensions = (char*[]){"bh2", 0},
+		.extensions = (const char*[]){"bh2", 0},
 		.registered = 1,
 	},
 
@@ -4141,21 +4141,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.fujixerox.ddd",
 		.encoding = "base64",
-		.extensions = (char*[]){"ddd", 0},
+		.extensions = (const char*[]){"ddd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujixerox.docuworks",
 		.encoding = "base64",
-		.extensions = (char*[]){"xdw", 0},
+		.extensions = (const char*[]){"xdw", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.fujixerox.docuworks.binder",
 		.encoding = "base64",
-		.extensions = (char*[]){"xbd", 0},
+		.extensions = (const char*[]){"xbd", 0},
 		.registered = 1,
 	},
 
@@ -4183,14 +4183,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.fuzzysheet",
 		.encoding = "base64",
-		.extensions = (char*[]){"fzs", 0},
+		.extensions = (const char*[]){"fzs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.genomatix.tuxedo",
 		.encoding = "base64",
-		.extensions = (char*[]){"txd", 0},
+		.extensions = (const char*[]){"txd", 0},
 		.registered = 1,
 	},
 
@@ -4211,42 +4211,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.geogebra.file",
 		.encoding = "base64",
-		.extensions = (char*[]){"ggb", 0},
+		.extensions = (const char*[]){"ggb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.geogebra.tool",
 		.encoding = "base64",
-		.extensions = (char*[]){"ggt", 0},
+		.extensions = (const char*[]){"ggt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.geometry-explorer",
 		.encoding = "base64",
-		.extensions = (char*[]){"gex", "gre", 0},
+		.extensions = (const char*[]){"gex", "gre", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.geonext",
 		.encoding = "base64",
-		.extensions = (char*[]){"gxt", 0},
+		.extensions = (const char*[]){"gxt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.geoplan",
 		.encoding = "base64",
-		.extensions = (char*[]){"g2w", 0},
+		.extensions = (const char*[]){"g2w", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.geospace",
 		.encoding = "base64",
-		.extensions = (char*[]){"g3w", 0},
+		.extensions = (const char*[]){"g3w", 0},
 		.registered = 1,
 	},
 
@@ -4274,21 +4274,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.gmx",
 		.encoding = "base64",
-		.extensions = (char*[]){"gmx", 0},
+		.extensions = (const char*[]){"gmx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.google-earth.kml+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"kml", 0},
+		.extensions = (const char*[]){"kml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.google-earth.kmz",
 		.encoding = "8bit",
-		.extensions = (char*[]){"kmz", 0},
+		.extensions = (const char*[]){"kmz", 0},
 		.registered = 1,
 	},
 
@@ -4316,7 +4316,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.grafeq",
 		.encoding = "base64",
-		.extensions = (char*[]){"gqf", "gqs", 0},
+		.extensions = (const char*[]){"gqf", "gqs", 0},
 		.registered = 1,
 	},
 
@@ -4330,49 +4330,49 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.groove-account",
 		.encoding = "base64",
-		.extensions = (char*[]){"gac", 0},
+		.extensions = (const char*[]){"gac", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.groove-help",
 		.encoding = "base64",
-		.extensions = (char*[]){"ghf", 0},
+		.extensions = (const char*[]){"ghf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.groove-identity-message",
 		.encoding = "base64",
-		.extensions = (char*[]){"gim", 0},
+		.extensions = (const char*[]){"gim", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.groove-injector",
 		.encoding = "base64",
-		.extensions = (char*[]){"grv", 0},
+		.extensions = (const char*[]){"grv", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.groove-tool-message",
 		.encoding = "base64",
-		.extensions = (char*[]){"gtm", 0},
+		.extensions = (const char*[]){"gtm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.groove-tool-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"tpl", 0},
+		.extensions = (const char*[]){"tpl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.groove-vcard",
 		.encoding = "base64",
-		.extensions = (char*[]){"vcg", 0},
+		.extensions = (const char*[]){"vcg", 0},
 		.registered = 1,
 	},
 
@@ -4386,21 +4386,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.hal+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"hal", 0},
+		.extensions = (const char*[]){"hal", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.HandHeld-Entertainment+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"zmm", 0},
+		.extensions = (const char*[]){"zmm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hbci",
 		.encoding = "base64",
-		.extensions = (char*[]){"hbci", "hbc", "kom", "upa", "pkd", "bpd", 0},
+		.extensions = (const char*[]){"hbci", "hbc", "kom", "upa", "pkd", "bpd", 0},
 		.registered = 1,
 	},
 
@@ -4428,49 +4428,49 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.hhe.lesson-player",
 		.encoding = "base64",
-		.extensions = (char*[]){"les", 0},
+		.extensions = (const char*[]){"les", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hp-HPGL",
 		.encoding = "base64",
-		.extensions = (char*[]){"plt", "hpgl", 0},
+		.extensions = (const char*[]){"plt", "hpgl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hp-hpid",
 		.encoding = "base64",
-		.extensions = (char*[]){"hpid", 0},
+		.extensions = (const char*[]){"hpid", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hp-hps",
 		.encoding = "base64",
-		.extensions = (char*[]){"hps", 0},
+		.extensions = (const char*[]){"hps", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hp-jlyt",
 		.encoding = "base64",
-		.extensions = (char*[]){"jlt", 0},
+		.extensions = (const char*[]){"jlt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hp-PCL",
 		.encoding = "base64",
-		.extensions = (char*[]){"pcl", 0},
+		.extensions = (const char*[]){"pcl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.hp-PCLXL",
 		.encoding = "base64",
-		.extensions = (char*[]){"pclxl", 0},
+		.extensions = (const char*[]){"pclxl", 0},
 		.registered = 1,
 	},
 
@@ -4484,7 +4484,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.hydrostatix.sof-data",
 		.encoding = "base64",
-		.extensions = (char*[]){"sfd-hdstx", 0},
+		.extensions = (const char*[]){"sfd-hdstx", 0},
 		.registered = 1,
 	},
 
@@ -4512,42 +4512,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ibm.electronic-media",
 		.encoding = "base64",
-		.extensions = (char*[]){"emm", 0},
+		.extensions = (const char*[]){"emm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ibm.MiniPay",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpy", 0},
+		.extensions = (const char*[]){"mpy", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ibm.modcap",
 		.encoding = "base64",
-		.extensions = (char*[]){"afp", "list3820", "listafp", 0},
+		.extensions = (const char*[]){"afp", "list3820", "listafp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ibm.rights-management",
 		.encoding = "base64",
-		.extensions = (char*[]){"irm", 0},
+		.extensions = (const char*[]){"irm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ibm.secure-container",
 		.encoding = "base64",
-		.extensions = (char*[]){"sc", 0},
+		.extensions = (const char*[]){"sc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.iccprofile",
 		.encoding = "base64",
-		.extensions = (char*[]){"icc", "icm", 0},
+		.extensions = (const char*[]){"icc", "icm", 0},
 		.registered = 1,
 	},
 
@@ -4561,21 +4561,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.igloader",
 		.encoding = "base64",
-		.extensions = (char*[]){"igl", 0},
+		.extensions = (const char*[]){"igl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.immervision-ivp",
 		.encoding = "base64",
-		.extensions = (char*[]){"ivp", 0},
+		.extensions = (const char*[]){"ivp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.immervision-ivu",
 		.encoding = "base64",
-		.extensions = (char*[]){"ivu", 0},
+		.extensions = (const char*[]){"ivu", 0},
 		.registered = 1,
 	},
 
@@ -4680,21 +4680,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.insors.igm",
 		.encoding = "base64",
-		.extensions = (char*[]){"igm", 0},
+		.extensions = (const char*[]){"igm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.intercon.formnet",
 		.encoding = "base64",
-		.extensions = (char*[]){"xpw", "xpx", 0},
+		.extensions = (const char*[]){"xpw", "xpx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.intergeo",
 		.encoding = "base64",
-		.extensions = (char*[]){"i2g", 0},
+		.extensions = (const char*[]){"i2g", 0},
 		.registered = 1,
 	},
 
@@ -4715,14 +4715,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.intu.qbo",
 		.encoding = "base64",
-		.extensions = (char*[]){"qbo", 0},
+		.extensions = (const char*[]){"qbo", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.intu.qfx",
 		.encoding = "base64",
-		.extensions = (char*[]){"qfx", 0},
+		.extensions = (const char*[]){"qfx", 0},
 		.registered = 1,
 	},
 
@@ -4778,35 +4778,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ipunplugged.rcprofile",
 		.encoding = "base64",
-		.extensions = (char*[]){"rcprofile", 0},
+		.extensions = (const char*[]){"rcprofile", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.irepository.package+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"irp", 0},
+		.extensions = (const char*[]){"irp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.is-xpr",
 		.encoding = "base64",
-		.extensions = (char*[]){"xpr", 0},
+		.extensions = (const char*[]){"xpr", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.isac.fcs",
 		.encoding = "base64",
-		.extensions = (char*[]){"fcs", 0},
+		.extensions = (const char*[]){"fcs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.jam",
 		.encoding = "base64",
-		.extensions = (char*[]){"jam", 0},
+		.extensions = (const char*[]){"jam", 0},
 		.registered = 1,
 	},
 
@@ -4869,21 +4869,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.jcp.javame.midlet-rms",
 		.encoding = "base64",
-		.extensions = (char*[]){"rms", 0},
+		.extensions = (const char*[]){"rms", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.jisp",
 		.encoding = "base64",
-		.extensions = (char*[]){"jisp", 0},
+		.extensions = (const char*[]){"jisp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.joost.joda-archive",
 		.encoding = "base64",
-		.extensions = (char*[]){"joda", 0},
+		.extensions = (const char*[]){"joda", 0},
 		.registered = 1,
 	},
 
@@ -4897,105 +4897,105 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.kahootz",
 		.encoding = "base64",
-		.extensions = (char*[]){"ktr", "ktz", 0},
+		.extensions = (const char*[]){"ktr", "ktz", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.karbon",
 		.encoding = "base64",
-		.extensions = (char*[]){"karbon", 0},
+		.extensions = (const char*[]){"karbon", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kchart",
 		.encoding = "base64",
-		.extensions = (char*[]){"chrt", 0},
+		.extensions = (const char*[]){"chrt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kformula",
 		.encoding = "base64",
-		.extensions = (char*[]){"kfo", 0},
+		.extensions = (const char*[]){"kfo", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kivio",
 		.encoding = "base64",
-		.extensions = (char*[]){"flw", 0},
+		.extensions = (const char*[]){"flw", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kontour",
 		.encoding = "base64",
-		.extensions = (char*[]){"kon", 0},
+		.extensions = (const char*[]){"kon", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kpresenter",
 		.encoding = "base64",
-		.extensions = (char*[]){"kpr", "kpt", 0},
+		.extensions = (const char*[]){"kpr", "kpt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kspread",
 		.encoding = "base64",
-		.extensions = (char*[]){"ksp", 0},
+		.extensions = (const char*[]){"ksp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kde.kword",
 		.encoding = "base64",
-		.extensions = (char*[]){"kwd", "kwt", 0},
+		.extensions = (const char*[]){"kwd", "kwt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kenameaapp",
 		.encoding = "base64",
-		.extensions = (char*[]){"htke", 0},
+		.extensions = (const char*[]){"htke", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kidspiration",
 		.encoding = "base64",
-		.extensions = (char*[]){"kia", 0},
+		.extensions = (const char*[]){"kia", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Kinar",
 		.encoding = "base64",
-		.extensions = (char*[]){"kne", "knp", "sdf", 0},
+		.extensions = (const char*[]){"kne", "knp", "sdf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.koan",
 		.encoding = "base64",
-		.extensions = (char*[]){"skd", "skm", "skp", "skt", 0},
+		.extensions = (const char*[]){"skd", "skm", "skp", "skt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.kodak-descriptor",
 		.encoding = "base64",
-		.extensions = (char*[]){"sse", 0},
+		.extensions = (const char*[]){"sse", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.las.las+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"lasxml", 0},
+		.extensions = (const char*[]){"lasxml", 0},
 		.registered = 1,
 	},
 
@@ -5009,70 +5009,70 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.llamagraphics.life-balance.desktop",
 		.encoding = "base64",
-		.extensions = (char*[]){"lbd", 0},
+		.extensions = (const char*[]){"lbd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.llamagraphics.life-balance.exchange+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"lbe", 0},
+		.extensions = (const char*[]){"lbe", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-1-2-3",
 		.encoding = "base64",
-		.extensions = (char*[]){"wks", "123", 0},
+		.extensions = (const char*[]){"wks", "123", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-approach",
 		.encoding = "base64",
-		.extensions = (char*[]){"apr", 0},
+		.extensions = (const char*[]){"apr", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-freelance",
 		.encoding = "base64",
-		.extensions = (char*[]){"pre", 0},
+		.extensions = (const char*[]){"pre", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-notes",
 		.encoding = "base64",
-		.extensions = (char*[]){"nsf", 0},
+		.extensions = (const char*[]){"nsf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-organizer",
 		.encoding = "base64",
-		.extensions = (char*[]){"org", 0},
+		.extensions = (const char*[]){"org", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-screencam",
 		.encoding = "base64",
-		.extensions = (char*[]){"scm", 0},
+		.extensions = (const char*[]){"scm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.lotus-wordpro",
 		.encoding = "base64",
-		.extensions = (char*[]){"lwp", 0},
+		.extensions = (const char*[]){"lwp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.macports.portpkg",
 		.encoding = "base64",
-		.extensions = (char*[]){"portpkg", 0},
+		.extensions = (const char*[]){"portpkg", 0},
 		.registered = 1,
 	},
 
@@ -5128,21 +5128,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.mcd",
 		.encoding = "base64",
-		.extensions = (char*[]){"mcd", 0},
+		.extensions = (const char*[]){"mcd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.medcalcdata",
 		.encoding = "base64",
-		.extensions = (char*[]){"mc1", 0},
+		.extensions = (const char*[]){"mc1", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.mediastation.cdkey",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdkey", 0},
+		.extensions = (const char*[]){"cdkey", 0},
 		.registered = 1,
 	},
 
@@ -5156,14 +5156,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.MFER",
 		.encoding = "base64",
-		.extensions = (char*[]){"mwf", 0},
+		.extensions = (const char*[]){"mwf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.mfmp",
 		.encoding = "base64",
-		.extensions = (char*[]){"mfm", 0},
+		.extensions = (const char*[]){"mfm", 0},
 		.registered = 1,
 	},
 
@@ -5177,14 +5177,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.micrografx.flo",
 		.encoding = "base64",
-		.extensions = (char*[]){"flo", 0},
+		.extensions = (const char*[]){"flo", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.micrografx.igx",
 		.encoding = "base64",
-		.extensions = (char*[]){"igx", 0},
+		.extensions = (const char*[]){"igx", 0},
 		.registered = 1,
 	},
 
@@ -5205,7 +5205,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.mif",
 		.encoding = "base64",
-		.extensions = (char*[]){"mif", 0},
+		.extensions = (const char*[]){"mif", 0},
 		.registered = 1,
 	},
 
@@ -5226,63 +5226,63 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.Mobius.DAF",
 		.encoding = "base64",
-		.extensions = (char*[]){"daf", 0},
+		.extensions = (const char*[]){"daf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Mobius.DIS",
 		.encoding = "base64",
-		.extensions = (char*[]){"dis", 0},
+		.extensions = (const char*[]){"dis", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Mobius.MBK",
 		.encoding = "base64",
-		.extensions = (char*[]){"mbk", 0},
+		.extensions = (const char*[]){"mbk", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Mobius.MQY",
 		.encoding = "base64",
-		.extensions = (char*[]){"mqy", 0},
+		.extensions = (const char*[]){"mqy", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Mobius.MSL",
 		.encoding = "base64",
-		.extensions = (char*[]){"msl", 0},
+		.extensions = (const char*[]){"msl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Mobius.PLC",
 		.encoding = "base64",
-		.extensions = (char*[]){"plc", 0},
+		.extensions = (const char*[]){"plc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.Mobius.TXF",
 		.encoding = "base64",
-		.extensions = (char*[]){"txf", 0},
+		.extensions = (const char*[]){"txf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.mophun.application",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpn", 0},
+		.extensions = (const char*[]){"mpn", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.mophun.certificate",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpc", 0},
+		.extensions = (const char*[]){"mpc", 0},
 		.registered = 1,
 	},
 
@@ -5345,7 +5345,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.mozilla.xul+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xul", 0},
+		.extensions = (const char*[]){"xul", 0},
 		.registered = 1,
 	},
 
@@ -5359,84 +5359,84 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ms-artgalry",
 		.encoding = "base64",
-		.extensions = (char*[]){"cil", 0},
+		.extensions = (const char*[]){"cil", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-asf",
 		.encoding = "base64",
-		.extensions = (char*[]){"asf", 0},
+		.extensions = (const char*[]){"asf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-cab-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"cab", 0},
+		.extensions = (const char*[]){"cab", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-excel",
 		.encoding = "base64",
-		.extensions = (char*[]){"xls", "xlt", "xla", "xlc", "xlm", "xlw", 0},
+		.extensions = (const char*[]){"xls", "xlt", "xla", "xlc", "xlm", "xlw", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-excel.addin.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"xlam", 0},
+		.extensions = (const char*[]){"xlam", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-excel.sheet.binary.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"xlsb", 0},
+		.extensions = (const char*[]){"xlsb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-excel.sheet.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"xlsm", 0},
+		.extensions = (const char*[]){"xlsm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-excel.template.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"xltm", 0},
+		.extensions = (const char*[]){"xltm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-fontobject",
 		.encoding = "base64",
-		.extensions = (char*[]){"eot", 0},
+		.extensions = (const char*[]){"eot", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-htmlhelp",
 		.encoding = "base64",
-		.extensions = (char*[]){"chm", 0},
+		.extensions = (const char*[]){"chm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-ims",
 		.encoding = "base64",
-		.extensions = (char*[]){"ims", 0},
+		.extensions = (const char*[]){"ims", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-lrm",
 		.encoding = "base64",
-		.extensions = (char*[]){"lrm", 0},
+		.extensions = (const char*[]){"lrm", 0},
 		.registered = 1,
 	},
 
@@ -5450,28 +5450,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ms-officetheme",
 		.encoding = "base64",
-		.extensions = (char*[]){"thmx", 0},
+		.extensions = (const char*[]){"thmx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-outlook",
 		.encoding = "base64",
-		.extensions = (char*[]){"msg", 0},
+		.extensions = (const char*[]){"msg", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.ms-pki.seccat",
 		.encoding = "base64",
-		.extensions = (char*[]){"cat", 0},
+		.extensions = (const char*[]){"cat", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.ms-pki.stl",
 		.encoding = "base64",
-		.extensions = (char*[]){"stl", 0},
+		.extensions = (const char*[]){"stl", 0},
 		.registered = 0,
 	},
 
@@ -5485,42 +5485,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ms-powerpoint",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppt", "pps", "pot", 0},
+		.extensions = (const char*[]){"ppt", "pps", "pot", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-powerpoint.addin.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppam", 0},
+		.extensions = (const char*[]){"ppam", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-powerpoint.presentation.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"pptm", 0},
+		.extensions = (const char*[]){"pptm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-powerpoint.slide.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"sldm", 0},
+		.extensions = (const char*[]){"sldm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppsm", 0},
+		.extensions = (const char*[]){"ppsm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-powerpoint.template.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"potm", 0},
+		.extensions = (const char*[]){"potm", 0},
 		.registered = 1,
 	},
 
@@ -5541,7 +5541,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ms-project",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpp", "mpt", 0},
+		.extensions = (const char*[]){"mpp", "mpt", 0},
 		.registered = 1,
 	},
 
@@ -5611,35 +5611,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ms-word.document.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"docm", 0},
+		.extensions = (const char*[]){"docm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-word.template.macroEnabled.12",
 		.encoding = "base64",
-		.extensions = (char*[]){"dotm", 0},
+		.extensions = (const char*[]){"dotm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-works",
 		.encoding = "base64",
-		.extensions = (char*[]){"wcm", "wdb", "wks", "wps", 0},
+		.extensions = (const char*[]){"wcm", "wdb", "wks", "wps", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-wpl",
 		.encoding = "base64",
-		.extensions = (char*[]){"wpl", 0},
+		.extensions = (const char*[]){"wpl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.ms-xpsdocument",
 		.encoding = "8bit",
-		.extensions = (char*[]){"xps", 0},
+		.extensions = (const char*[]){"xps", 0},
 		.registered = 1,
 	},
 
@@ -5653,7 +5653,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.mseq",
 		.encoding = "base64",
-		.extensions = (char*[]){"mseq", 0},
+		.extensions = (const char*[]){"mseq", 0},
 		.registered = 1,
 	},
 
@@ -5688,21 +5688,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.musician",
 		.encoding = "base64",
-		.extensions = (char*[]){"mus", 0},
+		.extensions = (const char*[]){"mus", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.muvee.style",
 		.encoding = "base64",
-		.extensions = (char*[]){"msty", 0},
+		.extensions = (const char*[]){"msty", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.mynfc",
 		.encoding = "base64",
-		.extensions = (char*[]){"taglet", 0},
+		.extensions = (const char*[]){"taglet", 0},
 		.registered = 1,
 	},
 
@@ -5723,7 +5723,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.nervana",
 		.encoding = "base64",
-		.extensions = (char*[]){"ent", "entity", "req", "request", "bkm", "kcm", 0},
+		.extensions = (const char*[]){"ent", "entity", "req", "request", "bkm", "kcm", 0},
 		.registered = 1,
 	},
 
@@ -5737,7 +5737,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.neurolanguage.nlu",
 		.encoding = "base64",
-		.extensions = (char*[]){"nlu", 0},
+		.extensions = (const char*[]){"nlu", 0},
 		.registered = 1,
 	},
 
@@ -5758,28 +5758,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.nitf",
 		.encoding = "base64",
-		.extensions = (char*[]){"nitf", "ntf", 0},
+		.extensions = (const char*[]){"nitf", "ntf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.noblenet-directory",
 		.encoding = "base64",
-		.extensions = (char*[]){"nnd", 0},
+		.extensions = (const char*[]){"nnd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.noblenet-sealer",
 		.encoding = "base64",
-		.extensions = (char*[]){"nns", 0},
+		.extensions = (const char*[]){"nns", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.noblenet-web",
 		.encoding = "base64",
-		.extensions = (char*[]){"nnw", 0},
+		.extensions = (const char*[]){"nnw", 0},
 		.registered = 1,
 	},
 
@@ -5849,14 +5849,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.nokia.n-gage.data",
 		.encoding = "base64",
-		.extensions = (char*[]){"ngdat", 0},
+		.extensions = (const char*[]){"ngdat", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.nokia.n-gage.symbian.install",
 		.encoding = "base64",
-		.extensions = (char*[]){"n-gage", 0},
+		.extensions = (const char*[]){"n-gage", 0},
 		.registered = 1,
 	},
 
@@ -5891,35 +5891,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.nokia.radio-preset",
 		.encoding = "base64",
-		.extensions = (char*[]){"rpst", 0},
+		.extensions = (const char*[]){"rpst", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.nokia.radio-presets",
 		.encoding = "base64",
-		.extensions = (char*[]){"rpss", 0},
+		.extensions = (const char*[]){"rpss", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.novadigm.EDM",
 		.encoding = "base64",
-		.extensions = (char*[]){"edm", 0},
+		.extensions = (const char*[]){"edm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.novadigm.EDX",
 		.encoding = "base64",
-		.extensions = (char*[]){"edx", 0},
+		.extensions = (const char*[]){"edx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.novadigm.EXT",
 		.encoding = "base64",
-		.extensions = (char*[]){"ext", 0},
+		.extensions = (const char*[]){"ext", 0},
 		.registered = 1,
 	},
 
@@ -5961,119 +5961,119 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.oasis.opendocument.chart",
 		.encoding = "base64",
-		.extensions = (char*[]){"odc", 0},
+		.extensions = (const char*[]){"odc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.chart-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"odc", "otc", 0},
+		.extensions = (const char*[]){"odc", "otc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.database",
 		.encoding = "base64",
-		.extensions = (char*[]){"odb", 0},
+		.extensions = (const char*[]){"odb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.formula",
 		.encoding = "base64",
-		.extensions = (char*[]){"odf", 0},
+		.extensions = (const char*[]){"odf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.formula-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"odf", "odft", 0},
+		.extensions = (const char*[]){"odf", "odft", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.graphics",
 		.encoding = "base64",
-		.extensions = (char*[]){"odg", 0},
+		.extensions = (const char*[]){"odg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.graphics-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"otg", 0},
+		.extensions = (const char*[]){"otg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.image",
 		.encoding = "base64",
-		.extensions = (char*[]){"odi", 0},
+		.extensions = (const char*[]){"odi", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.image-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"odi", "oti", 0},
+		.extensions = (const char*[]){"odi", "oti", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.presentation",
 		.encoding = "base64",
-		.extensions = (char*[]){"odp", 0},
+		.extensions = (const char*[]){"odp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.presentation-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"otp", 0},
+		.extensions = (const char*[]){"otp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.spreadsheet",
 		.encoding = "base64",
-		.extensions = (char*[]){"ods", 0},
+		.extensions = (const char*[]){"ods", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.spreadsheet-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"ots", 0},
+		.extensions = (const char*[]){"ots", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.text",
 		.encoding = "base64",
-		.extensions = (char*[]){"odt", 0},
+		.extensions = (const char*[]){"odt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.text-master",
 		.encoding = "base64",
-		.extensions = (char*[]){"odm", 0},
+		.extensions = (const char*[]){"odm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.text-template",
 		.encoding = "base64",
-		.extensions = (char*[]){"ott", 0},
+		.extensions = (const char*[]){"ott", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.oasis.opendocument.text-web",
 		.encoding = "base64",
-		.extensions = (char*[]){"oth", 0},
+		.extensions = (const char*[]){"oth", 0},
 		.registered = 1,
 	},
 
@@ -6171,7 +6171,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.olpc-sugar",
 		.encoding = "base64",
-		.extensions = (char*[]){"xo", 0},
+		.extensions = (const char*[]){"xo", 0},
 		.registered = 1,
 	},
 
@@ -6339,7 +6339,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.oma.dd2+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"dd2", 0},
+		.extensions = (const char*[]){"dd2", 0},
 		.registered = 1,
 	},
 
@@ -6486,7 +6486,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openofficeorg.extension",
 		.encoding = "base64",
-		.extensions = (char*[]){"oxt", 0},
+		.extensions = (const char*[]){"oxt", 0},
 		.registered = 1,
 	},
 
@@ -6598,7 +6598,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.presentationml.presentation",
 		.encoding = "base64",
-		.extensions = (char*[]){"pptx", 0},
+		.extensions = (const char*[]){"pptx", 0},
 		.registered = 1,
 	},
 
@@ -6619,7 +6619,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.presentationml.slide",
 		.encoding = "base64",
-		.extensions = (char*[]){"sldx", 0},
+		.extensions = (const char*[]){"sldx", 0},
 		.registered = 1,
 	},
 
@@ -6647,7 +6647,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppsx", 0},
+		.extensions = (const char*[]){"ppsx", 0},
 		.registered = 1,
 	},
 
@@ -6682,7 +6682,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.presentationml.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"potx", 0},
+		.extensions = (const char*[]){"potx", 0},
 		.registered = 1,
 	},
 
@@ -6794,7 +6794,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
 		.encoding = "base64",
-		.extensions = (char*[]){"xlsx", 0},
+		.extensions = (const char*[]){"xlsx", 0},
 		.registered = 1,
 	},
 
@@ -6836,7 +6836,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"xltx", 0},
+		.extensions = (const char*[]){"xltx", 0},
 		.registered = 1,
 	},
 
@@ -6899,7 +6899,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
 		.encoding = "base64",
-		.extensions = (char*[]){"docx", 0},
+		.extensions = (const char*[]){"docx", 0},
 		.registered = 1,
 	},
 
@@ -6969,7 +6969,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"dotx", 0},
+		.extensions = (const char*[]){"dotx", 0},
 		.registered = 1,
 	},
 
@@ -7032,7 +7032,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.osgeo.mapguide.package",
 		.encoding = "base64",
-		.extensions = (char*[]){"mgp", 0},
+		.extensions = (const char*[]){"mgp", 0},
 		.registered = 1,
 	},
 
@@ -7046,14 +7046,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.osgi.dp",
 		.encoding = "base64",
-		.extensions = (char*[]){"dp", 0},
+		.extensions = (const char*[]){"dp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.osgi.subsystem",
 		.encoding = "base64",
-		.extensions = (char*[]){"esa", 0},
+		.extensions = (const char*[]){"esa", 0},
 		.registered = 1,
 	},
 
@@ -7081,7 +7081,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.palm",
 		.encoding = "base64",
-		.extensions = (char*[]){"prc", "pdb", "pqa", "oprc", 0},
+		.extensions = (const char*[]){"prc", "pdb", "pqa", "oprc", 0},
 		.registered = 1,
 	},
 
@@ -7102,7 +7102,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.pawaafile",
 		.encoding = "base64",
-		.extensions = (char*[]){"paw", 0},
+		.extensions = (const char*[]){"paw", 0},
 		.registered = 1,
 	},
 
@@ -7116,14 +7116,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.pg.format",
 		.encoding = "base64",
-		.extensions = (char*[]){"str", 0},
+		.extensions = (const char*[]){"str", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.pg.osasli",
 		.encoding = "base64",
-		.extensions = (char*[]){"ei6", 0},
+		.extensions = (const char*[]){"ei6", 0},
 		.registered = 1,
 	},
 
@@ -7137,14 +7137,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.picsel",
 		.encoding = "base64",
-		.extensions = (char*[]){"efif", 0},
+		.extensions = (const char*[]){"efif", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.pmi.widget",
 		.encoding = "base64",
-		.extensions = (char*[]){"wg", 0},
+		.extensions = (const char*[]){"wg", 0},
 		.registered = 1,
 	},
 
@@ -7158,14 +7158,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.pocketlearn",
 		.encoding = "base64",
-		.extensions = (char*[]){"plf", 0},
+		.extensions = (const char*[]){"plf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.powerbuilder6",
 		.encoding = "base64",
-		.extensions = (char*[]){"pbd", 0},
+		.extensions = (const char*[]){"pbd", 0},
 		.registered = 1,
 	},
 
@@ -7214,28 +7214,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.previewsystems.box",
 		.encoding = "base64",
-		.extensions = (char*[]){"box", 0},
+		.extensions = (const char*[]){"box", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.proteus.magazine",
 		.encoding = "base64",
-		.extensions = (char*[]){"mgz", 0},
+		.extensions = (const char*[]){"mgz", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.publishare-delta-tree",
 		.encoding = "base64",
-		.extensions = (char*[]){"qps", 0},
+		.extensions = (const char*[]){"qps", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.pvi.ptid1",
 		.encoding = "base64",
-		.extensions = (char*[]){"pti", "ptid", 0},
+		.extensions = (const char*[]){"pti", "ptid", 0},
 		.registered = 1,
 	},
 
@@ -7270,7 +7270,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.Quark.QuarkXPress",
 		.encoding = "8bit",
-		.extensions = (char*[]){"qxd", "qxt", "qwd", "qwt", "qxl", "qxb", 0},
+		.extensions = (const char*[]){"qxd", "qxt", "qwd", "qwt", "qxl", "qxb", 0},
 		.registered = 1,
 	},
 
@@ -7403,21 +7403,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.realvnc.bed",
 		.encoding = "base64",
-		.extensions = (char*[]){"bed", 0},
+		.extensions = (const char*[]){"bed", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.recordare.musicxml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mxl", 0},
+		.extensions = (const char*[]){"mxl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.recordare.musicxml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"musicxml", 0},
+		.extensions = (const char*[]){"musicxml", 0},
 		.registered = 1,
 	},
 
@@ -7431,35 +7431,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.rig.cryptonote",
 		.encoding = "base64",
-		.extensions = (char*[]){"cryptonote", 0},
+		.extensions = (const char*[]){"cryptonote", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.rim.cod",
 		.encoding = "base64",
-		.extensions = (char*[]){"cod", 0},
+		.extensions = (const char*[]){"cod", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.rn-realmedia",
 		.encoding = "base64",
-		.extensions = (char*[]){"rm", 0},
+		.extensions = (const char*[]){"rm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.rn-realmedia-vbr",
 		.encoding = "base64",
-		.extensions = (char*[]){"rmvb", 0},
+		.extensions = (const char*[]){"rmvb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.route66.link66+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"link66", 0},
+		.extensions = (const char*[]){"link66", 0},
 		.registered = 1,
 	},
 
@@ -7487,7 +7487,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.sailingtracker.track",
 		.encoding = "base64",
-		.extensions = (char*[]){"st", 0},
+		.extensions = (const char*[]){"st", 0},
 		.registered = 1,
 	},
 
@@ -7529,21 +7529,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.sealed.doc",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdoc", "sdo", "s1w", 0},
+		.extensions = (const char*[]){"sdoc", "sdo", "s1w", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.sealed.eml",
 		.encoding = "base64",
-		.extensions = (char*[]){"seml", "sem", 0},
+		.extensions = (const char*[]){"seml", "sem", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.sealed.mht",
 		.encoding = "base64",
-		.extensions = (char*[]){"smht", "smh", 0},
+		.extensions = (const char*[]){"smht", "smh", 0},
 		.registered = 1,
 	},
 
@@ -7557,7 +7557,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.sealed.ppt",
 		.encoding = "base64",
-		.extensions = (char*[]){"sppt", "spp", "s1p", 0},
+		.extensions = (const char*[]){"sppt", "spp", "s1p", 0},
 		.registered = 1,
 	},
 
@@ -7571,84 +7571,84 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.sealed.xls",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxls", "sxl", "s1e", 0},
+		.extensions = (const char*[]){"sxls", "sxl", "s1e", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.sealedmedia.softseal.html",
 		.encoding = "base64",
-		.extensions = (char*[]){"stml", "stm", "s1h", 0},
+		.extensions = (const char*[]){"stml", "stm", "s1h", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.sealedmedia.softseal.pdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"spdf", "spd", "s1a", 0},
+		.extensions = (const char*[]){"spdf", "spd", "s1a", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.seemail",
 		.encoding = "base64",
-		.extensions = (char*[]){"see", 0},
+		.extensions = (const char*[]){"see", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.sema",
 		.encoding = "base64",
-		.extensions = (char*[]){"sema", 0},
+		.extensions = (const char*[]){"sema", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.semd",
 		.encoding = "base64",
-		.extensions = (char*[]){"semd", 0},
+		.extensions = (const char*[]){"semd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.semf",
 		.encoding = "base64",
-		.extensions = (char*[]){"semf", 0},
+		.extensions = (const char*[]){"semf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.shana.informed.formdata",
 		.encoding = "base64",
-		.extensions = (char*[]){"ifm", 0},
+		.extensions = (const char*[]){"ifm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.shana.informed.formtemplate",
 		.encoding = "base64",
-		.extensions = (char*[]){"itp", 0},
+		.extensions = (const char*[]){"itp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.shana.informed.interchange",
 		.encoding = "base64",
-		.extensions = (char*[]){"iif", 0},
+		.extensions = (const char*[]){"iif", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.shana.informed.package",
 		.encoding = "base64",
-		.extensions = (char*[]){"ipk", 0},
+		.extensions = (const char*[]){"ipk", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.SimTech-MindMapper",
 		.encoding = "base64",
-		.extensions = (char*[]){"twd", "twds", 0},
+		.extensions = (const char*[]){"twd", "twds", 0},
 		.registered = 1,
 	},
 
@@ -7662,7 +7662,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.smaf",
 		.encoding = "base64",
-		.extensions = (char*[]){"mmf", 0},
+		.extensions = (const char*[]){"mmf", 0},
 		.registered = 1,
 	},
 
@@ -7676,7 +7676,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.smart.teacher",
 		.encoding = "base64",
-		.extensions = (char*[]){"teacher", 0},
+		.extensions = (const char*[]){"teacher", 0},
 		.registered = 1,
 	},
 
@@ -7697,21 +7697,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.solent.sdkm+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdkd", "sdkm", 0},
+		.extensions = (const char*[]){"sdkd", "sdkm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.spotfire.dxp",
 		.encoding = "base64",
-		.extensions = (char*[]){"dxp", 0},
+		.extensions = (const char*[]){"dxp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.spotfire.sfs",
 		.encoding = "base64",
-		.extensions = (char*[]){"sfs", 0},
+		.extensions = (const char*[]){"sfs", 0},
 		.registered = 1,
 	},
 
@@ -7739,63 +7739,63 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.stardivision.calc",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdc", 0},
+		.extensions = (const char*[]){"sdc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stardivision.chart",
 		.encoding = "base64",
-		.extensions = (char*[]){"sds", 0},
+		.extensions = (const char*[]){"sds", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stardivision.draw",
 		.encoding = "base64",
-		.extensions = (char*[]){"sda", 0},
+		.extensions = (const char*[]){"sda", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stardivision.impress",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdd", 0},
+		.extensions = (const char*[]){"sdd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stardivision.math",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdf", "smf", 0},
+		.extensions = (const char*[]){"sdf", "smf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stardivision.writer",
 		.encoding = "base64",
-		.extensions = (char*[]){"sdw", "vor", 0},
+		.extensions = (const char*[]){"sdw", "vor", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stardivision.writer-global",
 		.encoding = "base64",
-		.extensions = (char*[]){"sgl", 0},
+		.extensions = (const char*[]){"sgl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.stepmania.package",
 		.encoding = "base64",
-		.extensions = (char*[]){"smzip", 0},
+		.extensions = (const char*[]){"smzip", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.stepmania.stepchart",
 		.encoding = "base64",
-		.extensions = (char*[]){"sm", 0},
+		.extensions = (const char*[]){"sm", 0},
 		.registered = 1,
 	},
 
@@ -7816,84 +7816,84 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.sun.xml.calc",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxc", 0},
+		.extensions = (const char*[]){"sxc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.calc.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"stc", 0},
+		.extensions = (const char*[]){"stc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.draw",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxd", 0},
+		.extensions = (const char*[]){"sxd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.draw.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"std", 0},
+		.extensions = (const char*[]){"std", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.impress",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxi", 0},
+		.extensions = (const char*[]){"sxi", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.impress.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"sti", 0},
+		.extensions = (const char*[]){"sti", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.math",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxm", 0},
+		.extensions = (const char*[]){"sxm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.writer",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxw", 0},
+		.extensions = (const char*[]){"sxw", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.writer.global",
 		.encoding = "base64",
-		.extensions = (char*[]){"sxg", 0},
+		.extensions = (const char*[]){"sxg", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sun.xml.writer.template",
 		.encoding = "base64",
-		.extensions = (char*[]){"stw", 0},
+		.extensions = (const char*[]){"stw", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.sus-calendar",
 		.encoding = "base64",
-		.extensions = (char*[]){"sus", "susp", 0},
+		.extensions = (const char*[]){"sus", "susp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.svd",
 		.encoding = "base64",
-		.extensions = (char*[]){"svd", 0},
+		.extensions = (const char*[]){"svd", 0},
 		.registered = 1,
 	},
 
@@ -7907,28 +7907,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.symbian.install",
 		.encoding = "base64",
-		.extensions = (char*[]){"sis", "sisx", 0},
+		.extensions = (const char*[]){"sis", "sisx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/vnd.syncml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xsm", 0},
+		.extensions = (const char*[]){"xsm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.syncml.dm+wbxml",
 		.encoding = "base64",
-		.extensions = (char*[]){"bdm", 0},
+		.extensions = (const char*[]){"bdm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.syncml.dm+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xdm", 0},
+		.extensions = (const char*[]){"xdm", 0},
 		.registered = 1,
 	},
 
@@ -7977,14 +7977,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.tao.intent-module-archive",
 		.encoding = "base64",
-		.extensions = (char*[]){"tao", 0},
+		.extensions = (const char*[]){"tao", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.tcpdump.pcap",
 		.encoding = "base64",
-		.extensions = (char*[]){"cap", "dmp", "pcap", 0},
+		.extensions = (const char*[]){"cap", "dmp", "pcap", 0},
 		.registered = 1,
 	},
 
@@ -8005,28 +8005,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.tmobile-livetv",
 		.encoding = "base64",
-		.extensions = (char*[]){"tmo", 0},
+		.extensions = (const char*[]){"tmo", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.trid.tpt",
 		.encoding = "base64",
-		.extensions = (char*[]){"tpt", 0},
+		.extensions = (const char*[]){"tpt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.triscape.mxs",
 		.encoding = "base64",
-		.extensions = (char*[]){"mxs", 0},
+		.extensions = (const char*[]){"mxs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.trueapp",
 		.encoding = "base64",
-		.extensions = (char*[]){"tra", 0},
+		.extensions = (const char*[]){"tra", 0},
 		.registered = 1,
 	},
 
@@ -8047,35 +8047,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.ufdl",
 		.encoding = "base64",
-		.extensions = (char*[]){"ufd", "ufdl", 0},
+		.extensions = (const char*[]){"ufd", "ufdl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.uiq.theme",
 		.encoding = "base64",
-		.extensions = (char*[]){"utz", 0},
+		.extensions = (const char*[]){"utz", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.umajin",
 		.encoding = "base64",
-		.extensions = (char*[]){"umj", 0},
+		.extensions = (const char*[]){"umj", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.unity",
 		.encoding = "base64",
-		.extensions = (char*[]){"unityweb", 0},
+		.extensions = (const char*[]){"unityweb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.uoml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"uoml", 0},
+		.extensions = (const char*[]){"uoml", 0},
 		.registered = 1,
 	},
 
@@ -8187,7 +8187,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.vcx",
 		.encoding = "base64",
-		.extensions = (char*[]){"vcx", 0},
+		.extensions = (const char*[]){"vcx", 0},
 		.registered = 1,
 	},
 
@@ -8222,21 +8222,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.vidsoft.vidconference",
 		.encoding = "8bit",
-		.extensions = (char*[]){"vsc", 0},
+		.extensions = (const char*[]){"vsc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.visio",
 		.encoding = "base64",
-		.extensions = (char*[]){"vsd", "vst", "vsw", "vss", 0},
+		.extensions = (const char*[]){"vsd", "vst", "vsw", "vss", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.visionary",
 		.encoding = "base64",
-		.extensions = (char*[]){"vis", 0},
+		.extensions = (const char*[]){"vis", 0},
 		.registered = 1,
 	},
 
@@ -8250,49 +8250,49 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.vsf",
 		.encoding = "base64",
-		.extensions = (char*[]){"vsf", 0},
+		.extensions = (const char*[]){"vsf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wap.sic",
 		.encoding = "base64",
-		.extensions = (char*[]){"sic", 0},
+		.extensions = (const char*[]){"sic", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wap.slc",
 		.encoding = "base64",
-		.extensions = (char*[]){"slc", 0},
+		.extensions = (const char*[]){"slc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wap.wbxml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wbxml", 0},
+		.extensions = (const char*[]){"wbxml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wap.wmlc",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmlc", 0},
+		.extensions = (const char*[]){"wmlc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wap.wmlscriptc",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmlsc", 0},
+		.extensions = (const char*[]){"wmlsc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.webturbo",
 		.encoding = "base64",
-		.extensions = (char*[]){"wtb", 0},
+		.extensions = (const char*[]){"wtb", 0},
 		.registered = 1,
 	},
 
@@ -8348,21 +8348,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.wolfram.player",
 		.encoding = "base64",
-		.extensions = (char*[]){"nbp", 0},
+		.extensions = (const char*[]){"nbp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wordperfect",
 		.encoding = "base64",
-		.extensions = (char*[]){"wpd", 0},
+		.extensions = (const char*[]){"wpd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wqd",
 		.encoding = "base64",
-		.extensions = (char*[]){"wqd", 0},
+		.extensions = (const char*[]){"wqd", 0},
 		.registered = 1,
 	},
 
@@ -8376,14 +8376,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.wt.stf",
 		.encoding = "base64",
-		.extensions = (char*[]){"stf", 0},
+		.extensions = (const char*[]){"stf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.wv.csp+wbxml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wv", 0},
+		.extensions = (const char*[]){"wv", 0},
 		.registered = 1,
 	},
 
@@ -8411,14 +8411,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.xara",
 		.encoding = "base64",
-		.extensions = (char*[]){"xar", 0},
+		.extensions = (const char*[]){"xar", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.xfdl",
 		.encoding = "base64",
-		.extensions = (char*[]){"xfdl", 0},
+		.extensions = (const char*[]){"xfdl", 0},
 		.registered = 1,
 	},
 
@@ -8474,35 +8474,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.yamaha.hv-dic",
 		.encoding = "base64",
-		.extensions = (char*[]){"hvd", 0},
+		.extensions = (const char*[]){"hvd", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.yamaha.hv-script",
 		.encoding = "base64",
-		.extensions = (char*[]){"hvs", 0},
+		.extensions = (const char*[]){"hvs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.yamaha.hv-voice",
 		.encoding = "base64",
-		.extensions = (char*[]){"hvp", 0},
+		.extensions = (const char*[]){"hvp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.yamaha.openscoreformat",
 		.encoding = "base64",
-		.extensions = (char*[]){"osf", 0},
+		.extensions = (const char*[]){"osf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.yamaha.openscoreformat.osfpvg+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"osfpvg", 0},
+		.extensions = (const char*[]){"osfpvg", 0},
 		.registered = 1,
 	},
 
@@ -8516,14 +8516,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.yamaha.smaf-audio",
 		.encoding = "base64",
-		.extensions = (char*[]){"saf", 0},
+		.extensions = (const char*[]){"saf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.yamaha.smaf-phrase",
 		.encoding = "base64",
-		.extensions = (char*[]){"spf", 0},
+		.extensions = (const char*[]){"spf", 0},
 		.registered = 1,
 	},
 
@@ -8551,28 +8551,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/vnd.yellowriver-custom-menu",
 		.encoding = "base64",
-		.extensions = (char*[]){"cmp", 0},
+		.extensions = (const char*[]){"cmp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.zul",
 		.encoding = "base64",
-		.extensions = (char*[]){"zir", "zirz", 0},
+		.extensions = (const char*[]){"zir", "zirz", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/vnd.zzazz.deck+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"zaz", 0},
+		.extensions = (const char*[]){"zaz", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/voicexml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"vxml", 0},
+		.extensions = (const char*[]){"vxml", 0},
 		.registered = 1,
 	},
 
@@ -8586,7 +8586,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/watcherinfo+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wif", 0},
+		.extensions = (const char*[]){"wif", 0},
 		.registered = 1,
 	},
 
@@ -8607,14 +8607,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/widget",
 		.encoding = "base64",
-		.extensions = (char*[]){"wgt", 0},
+		.extensions = (const char*[]){"wgt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/winhlp",
 		.encoding = "base64",
-		.extensions = (char*[]){"hlp", 0},
+		.extensions = (const char*[]){"hlp", 0},
 		.registered = 0,
 	},
 
@@ -8628,196 +8628,196 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/word",
 		.encoding = "base64",
-		.extensions = (char*[]){"doc", "dot", 0},
+		.extensions = (const char*[]){"doc", "dot", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/wordperfect",
 		.encoding = "base64",
-		.extensions = (char*[]){"wp", 0},
+		.extensions = (const char*[]){"wp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/wordperfect5.1",
 		.encoding = "base64",
-		.extensions = (char*[]){"wp5", "wp", 0},
+		.extensions = (const char*[]){"wp5", "wp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/wordperfect6.1",
 		.encoding = "base64",
-		.extensions = (char*[]){"wp6", 0},
+		.extensions = (const char*[]){"wp6", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/wordperfectd",
 		.encoding = "base64",
-		.extensions = (char*[]){"wpd", 0},
+		.extensions = (const char*[]){"wpd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/wsdl+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wsdl", 0},
+		.extensions = (const char*[]){"wsdl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/wspolicy+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wspolicy", 0},
+		.extensions = (const char*[]){"wspolicy", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/x-123",
 		.encoding = "base64",
-		.extensions = (char*[]){"wk", 0},
+		.extensions = (const char*[]){"wk", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-7z-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"7z", 0},
+		.extensions = (const char*[]){"7z", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-abiword",
 		.encoding = "base64",
-		.extensions = (char*[]){"abw", 0},
+		.extensions = (const char*[]){"abw", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-access",
 		.encoding = "base64",
-		.extensions = (char*[]){"mdf", "mda", "mdb", "mde", 0},
+		.extensions = (const char*[]){"mdf", "mda", "mdb", "mde", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ace-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"ace", 0},
+		.extensions = (const char*[]){"ace", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-apple-diskimage",
 		.encoding = "base64",
-		.extensions = (char*[]){"dmg", 0},
+		.extensions = (const char*[]){"dmg", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-authorware-bin",
 		.encoding = "base64",
-		.extensions = (char*[]){"aab", "u32", "vox", "x32", 0},
+		.extensions = (const char*[]){"aab", "u32", "vox", "x32", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-authorware-map",
 		.encoding = "base64",
-		.extensions = (char*[]){"aam", 0},
+		.extensions = (const char*[]){"aam", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-authorware-seg",
 		.encoding = "base64",
-		.extensions = (char*[]){"aas", 0},
+		.extensions = (const char*[]){"aas", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-bcpio",
 		.encoding = "base64",
-		.extensions = (char*[]){"bcpio", 0},
+		.extensions = (const char*[]){"bcpio", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-bittorrent",
 		.encoding = "base64",
-		.extensions = (char*[]){"torrent", 0},
+		.extensions = (const char*[]){"torrent", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-bleeper",
 		.encoding = "base64",
-		.extensions = (char*[]){"bleep", 0},
+		.extensions = (const char*[]){"bleep", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-blorb",
 		.encoding = "base64",
-		.extensions = (char*[]){"blb", "blorb", 0},
+		.extensions = (const char*[]){"blb", "blorb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-bzip",
 		.encoding = "base64",
-		.extensions = (char*[]){"bz", 0},
+		.extensions = (const char*[]){"bz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-bzip2",
 		.encoding = "base64",
-		.extensions = (char*[]){"boz", "bz2", 0},
+		.extensions = (const char*[]){"boz", "bz2", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-cbr",
 		.encoding = "base64",
-		.extensions = (char*[]){"cb7", "cba", "cbr", "cbt", "cbz", 0},
+		.extensions = (const char*[]){"cb7", "cba", "cbr", "cbt", "cbz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-cdlink",
 		.encoding = "base64",
-		.extensions = (char*[]){"vcd", 0},
+		.extensions = (const char*[]){"vcd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-cfs-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"cfs", 0},
+		.extensions = (const char*[]){"cfs", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-chat",
 		.encoding = "base64",
-		.extensions = (char*[]){"chat", 0},
+		.extensions = (const char*[]){"chat", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-chess-pgn",
 		.encoding = "base64",
-		.extensions = (char*[]){"pgn", 0},
+		.extensions = (const char*[]){"pgn", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-chrome-extension",
 		.encoding = "base64",
-		.extensions = (char*[]){"crx", 0},
+		.extensions = (const char*[]){"crx", 0},
 		.registered = 0,
 	},
 
@@ -8831,70 +8831,70 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-compress",
 		.encoding = "base64",
-		.extensions = (char*[]){"z", "Z", 0},
+		.extensions = (const char*[]){"z", "Z", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"z", "Z", 0},
+		.extensions = (const char*[]){"z", "Z", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-conference",
 		.encoding = "base64",
-		.extensions = (char*[]){"nsc", 0},
+		.extensions = (const char*[]){"nsc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-cpio",
 		.encoding = "base64",
-		.extensions = (char*[]){"cpio", 0},
+		.extensions = (const char*[]){"cpio", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-csh",
 		.encoding = "8bit",
-		.extensions = (char*[]){"csh", 0},
+		.extensions = (const char*[]){"csh", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-cu-seeme",
 		.encoding = "base64",
-		.extensions = (char*[]){"csm", "cu", 0},
+		.extensions = (const char*[]){"csm", "cu", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-debian-package",
 		.encoding = "base64",
-		.extensions = (char*[]){"deb", "udeb", 0},
+		.extensions = (const char*[]){"deb", "udeb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-dgc-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"dgc", 0},
+		.extensions = (const char*[]){"dgc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-director",
 		.encoding = "base64",
-		.extensions = (char*[]){"dcr", "@dir", "@dxr", "cct", "cst", "cxt", "dir", "dxr", "fgd", "swa", "w3d", 0},
+		.extensions = (const char*[]){"dcr", "@dir", "@dxr", "cct", "cst", "cxt", "dir", "dxr", "fgd", "swa", "w3d", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-doom",
 		.encoding = "base64",
-		.extensions = (char*[]){"wad", 0},
+		.extensions = (const char*[]){"wad", 0},
 		.registered = 0,
 	},
 
@@ -8908,28 +8908,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-dtbncx+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"ncx", 0},
+		.extensions = (const char*[]){"ncx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-dtbook+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"dtb", 0},
+		.extensions = (const char*[]){"dtb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-dtbresource+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"res", 0},
+		.extensions = (const char*[]){"res", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-dvi",
 		.encoding = "base64",
-		.extensions = (char*[]){"dvi", 0},
+		.extensions = (const char*[]){"dvi", 0},
 		.registered = 0,
 	},
 
@@ -8943,14 +8943,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-envoy",
 		.encoding = "base64",
-		.extensions = (char*[]){"evy", 0},
+		.extensions = (const char*[]){"evy", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-eva",
 		.encoding = "base64",
-		.extensions = (char*[]){"eva", 0},
+		.extensions = (const char*[]){"eva", 0},
 		.registered = 0,
 	},
 
@@ -8964,70 +8964,70 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-font-bdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"bdf", 0},
+		.extensions = (const char*[]){"bdf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-ghostscript",
 		.encoding = "base64",
-		.extensions = (char*[]){"gsf", 0},
+		.extensions = (const char*[]){"gsf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-linux-psf",
 		.encoding = "base64",
-		.extensions = (char*[]){"psf", 0},
+		.extensions = (const char*[]){"psf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-opentype",
 		.encoding = "base64",
-		.extensions = (char*[]){"otf", 0},
+		.extensions = (const char*[]){"otf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-otf",
 		.encoding = "base64",
-		.extensions = (char*[]){"otf", 0},
+		.extensions = (const char*[]){"otf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-pcf",
 		.encoding = "base64",
-		.extensions = (char*[]){"pcf", 0},
+		.extensions = (const char*[]){"pcf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-snf",
 		.encoding = "base64",
-		.extensions = (char*[]){"snf", 0},
+		.extensions = (const char*[]){"snf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-truetype",
 		.encoding = "base64",
-		.extensions = (char*[]){"ttf", 0},
+		.extensions = (const char*[]){"ttf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-ttf",
 		.encoding = "base64",
-		.extensions = (char*[]){"ttc", "ttf", 0},
+		.extensions = (const char*[]){"ttc", "ttf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-font-type1",
 		.encoding = "base64",
-		.extensions = (char*[]){"afm", "pfa", "pfb", "pfm", 0},
+		.extensions = (const char*[]){"afm", "pfa", "pfb", "pfm", 0},
 		.registered = 0,
 	},
 
@@ -9041,21 +9041,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-freearc",
 		.encoding = "base64",
-		.extensions = (char*[]){"arc", 0},
+		.extensions = (const char*[]){"arc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-futuresplash",
 		.encoding = "base64",
-		.extensions = (char*[]){"spl", 0},
+		.extensions = (const char*[]){"spl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-gca-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"gca", 0},
+		.extensions = (const char*[]){"gca", 0},
 		.registered = 0,
 	},
 
@@ -9069,77 +9069,77 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-glulx",
 		.encoding = "base64",
-		.extensions = (char*[]){"ulx", 0},
+		.extensions = (const char*[]){"ulx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-gnumeric",
 		.encoding = "base64",
-		.extensions = (char*[]){"gnumeric", 0},
+		.extensions = (const char*[]){"gnumeric", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-gramps-xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"gramps", 0},
+		.extensions = (const char*[]){"gramps", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-gtar",
 		.encoding = "base64",
-		.extensions = (char*[]){"gtar", "tgz", "tbz2", "tbz", 0},
+		.extensions = (const char*[]){"gtar", "tgz", "tbz2", "tbz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-gzip",
 		.encoding = "base64",
-		.extensions = (char*[]){"gz", 0},
+		.extensions = (const char*[]){"gz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-hdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"hdf", 0},
+		.extensions = (const char*[]){"hdf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-hep",
 		.encoding = "base64",
-		.extensions = (char*[]){"hep", 0},
+		.extensions = (const char*[]){"hep", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-html+ruby",
 		.encoding = "8bit",
-		.extensions = (char*[]){"rhtml", 0},
+		.extensions = (const char*[]){"rhtml", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-httpd-php",
 		.encoding = "8bit",
-		.extensions = (char*[]){"phtml", "pht", "php", 0},
+		.extensions = (const char*[]){"phtml", "pht", "php", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ibooks+zip",
 		.encoding = "base64",
-		.extensions = (char*[]){"ibooks", 0},
+		.extensions = (const char*[]){"ibooks", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ica",
 		.encoding = "base64",
-		.extensions = (char*[]){"ica", 0},
+		.extensions = (const char*[]){"ica", 0},
 		.registered = 0,
 	},
 
@@ -9153,126 +9153,126 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-imagemap",
 		.encoding = "8bit",
-		.extensions = (char*[]){"imagemap", "imap", 0},
+		.extensions = (const char*[]){"imagemap", "imap", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-install-instructions",
 		.encoding = "base64",
-		.extensions = (char*[]){"install", 0},
+		.extensions = (const char*[]){"install", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-iso9660-image",
 		.encoding = "base64",
-		.extensions = (char*[]){"iso", 0},
+		.extensions = (const char*[]){"iso", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-iwork-keynote-sffkey",
 		.encoding = "base64",
-		.extensions = (char*[]){"key", 0},
+		.extensions = (const char*[]){"key", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-iwork-numbers-sffnumbers",
 		.encoding = "base64",
-		.extensions = (char*[]){"numbers", 0},
+		.extensions = (const char*[]){"numbers", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-iwork-pages-sffpages",
 		.encoding = "base64",
-		.extensions = (char*[]){"pages", 0},
+		.extensions = (const char*[]){"pages", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-java-archive",
 		.encoding = "base64",
-		.extensions = (char*[]){"jar", 0},
+		.extensions = (const char*[]){"jar", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-java-jnlp-file",
 		.encoding = "base64",
-		.extensions = (char*[]){"jnlp", 0},
+		.extensions = (const char*[]){"jnlp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-java-serialized-object",
 		.encoding = "base64",
-		.extensions = (char*[]){"ser", 0},
+		.extensions = (const char*[]){"ser", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-java-vm",
 		.encoding = "base64",
-		.extensions = (char*[]){"class", 0},
+		.extensions = (const char*[]){"class", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-javascript",
 		.encoding = "8bit",
-		.extensions = (char*[]){"js", 0},
+		.extensions = (const char*[]){"js", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-koan",
 		.encoding = "base64",
-		.extensions = (char*[]){"skp", "skd", "skt", "skm", 0},
+		.extensions = (const char*[]){"skp", "skd", "skt", "skm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-latex",
 		.encoding = "8bit",
-		.extensions = (char*[]){"ltx", "latex", 0},
+		.extensions = (const char*[]){"ltx", "latex", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-lotus-123",
 		.encoding = "base64",
-		.extensions = (char*[]){"wks", 0},
+		.extensions = (const char*[]){"wks", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-lzh-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"lha", "lzh", 0},
+		.extensions = (const char*[]){"lha", "lzh", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mac",
 		.encoding = "base64",
-		.extensions = (char*[]){"bin", 0},
+		.extensions = (const char*[]){"bin", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mac-compactpro",
 		.encoding = "base64",
-		.extensions = (char*[]){"cpt", 0},
+		.extensions = (const char*[]){"cpt", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-macbase64",
 		.encoding = "base64",
-		.extensions = (char*[]){"bin", 0},
+		.extensions = (const char*[]){"bin", 0},
 		.registered = 0,
 	},
 
@@ -9286,14 +9286,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-maker",
 		.encoding = "base64",
-		.extensions = (char*[]){"frm", "maker", "frame", "fm", "fb", "book", "fbdoc", 0},
+		.extensions = (const char*[]){"frm", "maker", "frame", "fm", "fb", "book", "fbdoc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mathcad",
 		.encoding = "base64",
-		.extensions = (char*[]){"mcd", 0},
+		.extensions = (const char*[]){"mcd", 0},
 		.registered = 0,
 	},
 
@@ -9307,196 +9307,196 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-mie",
 		.encoding = "base64",
-		.extensions = (char*[]){"mie", 0},
+		.extensions = (const char*[]){"mie", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mif",
 		.encoding = "base64",
-		.extensions = (char*[]){"mif", 0},
+		.extensions = (const char*[]){"mif", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mobipocket-ebook",
 		.encoding = "base64",
-		.extensions = (char*[]){"mobi", "prc", 0},
+		.extensions = (const char*[]){"mobi", "prc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ms-application",
 		.encoding = "base64",
-		.extensions = (char*[]){"application", 0},
+		.extensions = (const char*[]){"application", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ms-shortcut",
 		.encoding = "base64",
-		.extensions = (char*[]){"lnk", 0},
+		.extensions = (const char*[]){"lnk", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ms-wmd",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmd", 0},
+		.extensions = (const char*[]){"wmd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ms-wmz",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmz", 0},
+		.extensions = (const char*[]){"wmz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ms-xbap",
 		.encoding = "base64",
-		.extensions = (char*[]){"xbap", 0},
+		.extensions = (const char*[]){"xbap", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msaccess",
 		.encoding = "base64",
-		.extensions = (char*[]){"mda", "mdb", "mde", "mdf", 0},
+		.extensions = (const char*[]){"mda", "mdb", "mde", "mdf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msbinder",
 		.encoding = "base64",
-		.extensions = (char*[]){"obd", 0},
+		.extensions = (const char*[]){"obd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mscardfile",
 		.encoding = "base64",
-		.extensions = (char*[]){"crd", 0},
+		.extensions = (const char*[]){"crd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msclip",
 		.encoding = "base64",
-		.extensions = (char*[]){"clp", 0},
+		.extensions = (const char*[]){"clp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msdos-program",
 		.encoding = "base64",
-		.extensions = (char*[]){"cmd", "bat", "com", "exe", "reg", "ps1", "vbs", 0},
+		.extensions = (const char*[]){"cmd", "bat", "com", "exe", "reg", "ps1", "vbs", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msdownload",
 		.encoding = "base64",
-		.extensions = (char*[]){"exe", "com", "cmd", "bat", "dll", "msi", "reg", "ps1", "vbs", 0},
+		.extensions = (const char*[]){"exe", "com", "cmd", "bat", "dll", "msi", "reg", "ps1", "vbs", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msmediaview",
 		.encoding = "base64",
-		.extensions = (char*[]){"m13", "m14", "mvb", 0},
+		.extensions = (const char*[]){"m13", "m14", "mvb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msmetafile",
 		.encoding = "base64",
-		.extensions = (char*[]){"emf", "emz", "wmf", "wmz", 0},
+		.extensions = (const char*[]){"emf", "emz", "wmf", "wmz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msmoney",
 		.encoding = "base64",
-		.extensions = (char*[]){"mny", 0},
+		.extensions = (const char*[]){"mny", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mspublisher",
 		.encoding = "base64",
-		.extensions = (char*[]){"pub", 0},
+		.extensions = (const char*[]){"pub", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msschedule",
 		.encoding = "base64",
-		.extensions = (char*[]){"scd", 0},
+		.extensions = (const char*[]){"scd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msterminal",
 		.encoding = "base64",
-		.extensions = (char*[]){"trm", 0},
+		.extensions = (const char*[]){"trm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-msword",
 		.encoding = "base64",
-		.extensions = (char*[]){"doc", "dot", "wrd", 0},
+		.extensions = (const char*[]){"doc", "dot", "wrd", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-mswrite",
 		.encoding = "base64",
-		.extensions = (char*[]){"wri", 0},
+		.extensions = (const char*[]){"wri", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-netcdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"nc", "cdf", 0},
+		.extensions = (const char*[]){"nc", "cdf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ns-proxy-autoconfig",
 		.encoding = "base64",
-		.extensions = (char*[]){"pac", 0},
+		.extensions = (const char*[]){"pac", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-nzb",
 		.encoding = "base64",
-		.extensions = (char*[]){"nzb", 0},
+		.extensions = (const char*[]){"nzb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-opera-extension",
 		.encoding = "base64",
-		.extensions = (char*[]){"oex", 0},
+		.extensions = (const char*[]){"oex", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-pagemaker",
 		.encoding = "base64",
-		.extensions = (char*[]){"pm", "pm5", "pt5", 0},
+		.extensions = (const char*[]){"pm", "pm5", "pt5", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-perl",
 		.encoding = "8bit",
-		.extensions = (char*[]){"pl", "pm", 0},
+		.extensions = (const char*[]){"pl", "pm", 0},
 		.registered = 0,
 	},
 
@@ -9510,42 +9510,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-pkcs12",
 		.encoding = "base64",
-		.extensions = (char*[]){"p12", "pfx", 0},
+		.extensions = (const char*[]){"p12", "pfx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-pkcs7-certificates",
 		.encoding = "base64",
-		.extensions = (char*[]){"p7b", "spc", 0},
+		.extensions = (const char*[]){"p7b", "spc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-pkcs7-certreqresp",
 		.encoding = "base64",
-		.extensions = (char*[]){"p7r", 0},
+		.extensions = (const char*[]){"p7r", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-python",
 		.encoding = "8bit",
-		.extensions = (char*[]){"py", 0},
+		.extensions = (const char*[]){"py", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-quicktimeplayer",
 		.encoding = "base64",
-		.extensions = (char*[]){"qtl", 0},
+		.extensions = (const char*[]){"qtl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-rar-compressed",
 		.encoding = "base64",
-		.extensions = (char*[]){"rar", 0},
+		.extensions = (const char*[]){"rar", 0},
 		.registered = 0,
 	},
 
@@ -9559,21 +9559,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-research-info-systems",
 		.encoding = "base64",
-		.extensions = (char*[]){"ris", 0},
+		.extensions = (const char*[]){"ris", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-rtf",
 		.encoding = "base64",
-		.extensions = (char*[]){"rtf", 0},
+		.extensions = (const char*[]){"rtf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-ruby",
 		.encoding = "8bit",
-		.extensions = (char*[]){"rb", "rbw", 0},
+		.extensions = (const char*[]){"rb", "rbw", 0},
 		.registered = 0,
 	},
 
@@ -9587,28 +9587,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-sh",
 		.encoding = "8bit",
-		.extensions = (char*[]){"sh", 0},
+		.extensions = (const char*[]){"sh", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-shar",
 		.encoding = "8bit",
-		.extensions = (char*[]){"shar", 0},
+		.extensions = (const char*[]){"shar", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-shockwave-flash",
 		.encoding = "base64",
-		.extensions = (char*[]){"swf", 0},
+		.extensions = (const char*[]){"swf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-silverlight-app",
 		.encoding = "base64",
-		.extensions = (char*[]){"xap", 0},
+		.extensions = (const char*[]){"xap", 0},
 		.registered = 0,
 	},
 
@@ -9629,14 +9629,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-spss",
 		.encoding = "base64",
-		.extensions = (char*[]){"sav", "sbs", "sps", "spo", "spp", 0},
+		.extensions = (const char*[]){"sav", "sbs", "sps", "spo", "spp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-sql",
 		.encoding = "base64",
-		.extensions = (char*[]){"sql", 0},
+		.extensions = (const char*[]){"sql", 0},
 		.registered = 0,
 	},
 
@@ -9650,126 +9650,126 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-stuffit",
 		.encoding = "base64",
-		.extensions = (char*[]){"sit", 0},
+		.extensions = (const char*[]){"sit", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-stuffitx",
 		.encoding = "base64",
-		.extensions = (char*[]){"sitx", 0},
+		.extensions = (const char*[]){"sitx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-subrip",
 		.encoding = "base64",
-		.extensions = (char*[]){"srt", 0},
+		.extensions = (const char*[]){"srt", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-sv4cpio",
 		.encoding = "base64",
-		.extensions = (char*[]){"sv4cpio", 0},
+		.extensions = (const char*[]){"sv4cpio", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-sv4crc",
 		.encoding = "base64",
-		.extensions = (char*[]){"sv4crc", 0},
+		.extensions = (const char*[]){"sv4crc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-t3vm-image",
 		.encoding = "base64",
-		.extensions = (char*[]){"t3", 0},
+		.extensions = (const char*[]){"t3", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-tads",
 		.encoding = "base64",
-		.extensions = (char*[]){"gam", 0},
+		.extensions = (const char*[]){"gam", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-tar",
 		.encoding = "base64",
-		.extensions = (char*[]){"tar", 0},
+		.extensions = (const char*[]){"tar", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-tcl",
 		.encoding = "8bit",
-		.extensions = (char*[]){"tcl", 0},
+		.extensions = (const char*[]){"tcl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-tex",
 		.encoding = "8bit",
-		.extensions = (char*[]){"tex", 0},
+		.extensions = (const char*[]){"tex", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-tex-tfm",
 		.encoding = "base64",
-		.extensions = (char*[]){"tfm", 0},
+		.extensions = (const char*[]){"tfm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-texinfo",
 		.encoding = "8bit",
-		.extensions = (char*[]){"texinfo", "texi", 0},
+		.extensions = (const char*[]){"texinfo", "texi", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-tgif",
 		.encoding = "base64",
-		.extensions = (char*[]){"obj", 0},
+		.extensions = (const char*[]){"obj", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-toolbook",
 		.encoding = "base64",
-		.extensions = (char*[]){"tbk", 0},
+		.extensions = (const char*[]){"tbk", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-troff",
 		.encoding = "base64",
-		.extensions = (char*[]){"t", "tr", "roff", 0},
+		.extensions = (const char*[]){"t", "tr", "roff", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-troff-man",
 		.encoding = "8bit",
-		.extensions = (char*[]){"man", 0},
+		.extensions = (const char*[]){"man", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-troff-me",
 		.encoding = "base64",
-		.extensions = (char*[]){"me", 0},
+		.extensions = (const char*[]){"me", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-troff-ms",
 		.encoding = "base64",
-		.extensions = (char*[]){"ms", 0},
+		.extensions = (const char*[]){"ms", 0},
 		.registered = 0,
 	},
 
@@ -9783,63 +9783,63 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-ustar",
 		.encoding = "base64",
-		.extensions = (char*[]){"ustar", 0},
+		.extensions = (const char*[]){"ustar", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-VMSBACKUP",
 		.encoding = "base64",
-		.extensions = (char*[]){"bck", 0},
+		.extensions = (const char*[]){"bck", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-wais-source",
 		.encoding = "base64",
-		.extensions = (char*[]){"src", 0},
+		.extensions = (const char*[]){"src", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-web-app-manifest+json",
 		.encoding = "base64",
-		.extensions = (char*[]){"webapp", 0},
+		.extensions = (const char*[]){"webapp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-Wingz",
 		.encoding = "base64",
-		.extensions = (char*[]){"wz", "wkz", 0},
+		.extensions = (const char*[]){"wz", "wkz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-word",
 		.encoding = "base64",
-		.extensions = (char*[]){"doc", "dot", 0},
+		.extensions = (const char*[]){"doc", "dot", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-wordperfect",
 		.encoding = "base64",
-		.extensions = (char*[]){"wp", 0},
+		.extensions = (const char*[]){"wp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-wordperfect6.1",
 		.encoding = "base64",
-		.extensions = (char*[]){"wp6", 0},
+		.extensions = (const char*[]){"wp6", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-wordperfectd",
 		.encoding = "base64",
-		.extensions = (char*[]){"wpd", 0},
+		.extensions = (const char*[]){"wpd", 0},
 		.registered = 0,
 	},
 
@@ -9853,42 +9853,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/x-x509-ca-cert",
 		.encoding = "base64",
-		.extensions = (char*[]){"crt", "der", 0},
+		.extensions = (const char*[]){"crt", "der", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-xfig",
 		.encoding = "base64",
-		.extensions = (char*[]){"fig", 0},
+		.extensions = (const char*[]){"fig", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-xliff+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xlf", 0},
+		.extensions = (const char*[]){"xlf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-xpinstall",
 		.encoding = "base64",
-		.extensions = (char*[]){"xpi", 0},
+		.extensions = (const char*[]){"xpi", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-xz",
 		.encoding = "base64",
-		.extensions = (char*[]){"xz", 0},
+		.extensions = (const char*[]){"xz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/x-zmachine",
 		.encoding = "base64",
-		.extensions = (char*[]){"z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8", 0},
+		.extensions = (const char*[]){"z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8", 0},
 		.registered = 0,
 	},
 
@@ -9916,7 +9916,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/xaml+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xaml", 0},
+		.extensions = (const char*[]){"xaml", 0},
 		.registered = 0,
 	},
 
@@ -9937,7 +9937,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/xcap-diff+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xdf", 0},
+		.extensions = (const char*[]){"xdf", 0},
 		.registered = 1,
 	},
 
@@ -9979,14 +9979,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/xenc+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xenc", 0},
+		.extensions = (const char*[]){"xenc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/xhtml+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"xht", "xhtml", 0},
+		.extensions = (const char*[]){"xht", "xhtml", 0},
 		.registered = 1,
 	},
 
@@ -10000,14 +10000,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"xml", "xsl", 0},
+		.extensions = (const char*[]){"xml", "xsl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/xml-dtd",
 		.encoding = "8bit",
-		.extensions = (char*[]){"dtd", 0},
+		.extensions = (const char*[]){"dtd", 0},
 		.registered = 1,
 	},
 
@@ -10035,56 +10035,56 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "application/xop+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xop", 0},
+		.extensions = (const char*[]){"xop", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/xproc+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xpl", 0},
+		.extensions = (const char*[]){"xpl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/xslt+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xslt", 0},
+		.extensions = (const char*[]){"xslt", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/xspf+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"xspf", 0},
+		.extensions = (const char*[]){"xspf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "application/xv+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"mxml", "xhvml", "xvm", "xvml", 0},
+		.extensions = (const char*[]){"mxml", "xhvml", "xvm", "xvml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/yang",
 		.encoding = "base64",
-		.extensions = (char*[]){"yang", 0},
+		.extensions = (const char*[]){"yang", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/yin+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"yin", 0},
+		.extensions = (const char*[]){"yin", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "application/zip",
 		.encoding = "base64",
-		.extensions = (char*[]){"zip", 0},
+		.extensions = (const char*[]){"zip", 0},
 		.registered = 1,
 	},
 
@@ -10133,21 +10133,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/adpcm",
 		.encoding = "base64",
-		.extensions = (char*[]){"adp", 0},
+		.extensions = (const char*[]){"adp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/AMR",
 		.encoding = "base64",
-		.extensions = (char*[]){"amr", 0},
+		.extensions = (const char*[]){"amr", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/AMR-WB",
 		.encoding = "base64",
-		.extensions = (char*[]){"awb", 0},
+		.extensions = (const char*[]){"awb", 0},
 		.registered = 1,
 	},
 
@@ -10196,7 +10196,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/basic",
 		.encoding = "base64",
-		.extensions = (char*[]){"au", "snd", 0},
+		.extensions = (const char*[]){"au", "snd", 0},
 		.registered = 1,
 	},
 
@@ -10301,7 +10301,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/EVRC",
 		.encoding = "base64",
-		.extensions = (char*[]){"evc", 0},
+		.extensions = (const char*[]){"evc", 0},
 		.registered = 1,
 	},
 
@@ -10546,7 +10546,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/L16",
 		.encoding = "base64",
-		.extensions = (char*[]){"l16", 0},
+		.extensions = (const char*[]){"l16", 0},
 		.registered = 1,
 	},
 
@@ -10581,7 +10581,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/midi",
 		.encoding = "base64",
-		.extensions = (char*[]){"kar", "mid", "midi", "rmi", 0},
+		.extensions = (const char*[]){"kar", "mid", "midi", "rmi", 0},
 		.registered = 0,
 	},
 
@@ -10595,14 +10595,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/mp4",
 		.encoding = "base64",
-		.extensions = (char*[]){"mp4", "mpg4", "f4a", "f4b", "mp4a", "m4a", 0},
+		.extensions = (const char*[]){"mp4", "mpg4", "f4a", "f4b", "mp4a", "m4a", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/MP4A-LATM",
 		.encoding = "base64",
-		.extensions = (char*[]){"m4a", 0},
+		.extensions = (const char*[]){"m4a", 0},
 		.registered = 1,
 	},
 
@@ -10623,7 +10623,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/mpeg",
 		.encoding = "base64",
-		.extensions = (char*[]){"mpga", "mp2", "mp3", "m2a", "m3a", "mp2a", 0},
+		.extensions = (const char*[]){"mpga", "mp2", "mp3", "m2a", "m3a", "mp2a", 0},
 		.registered = 1,
 	},
 
@@ -10637,7 +10637,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/ogg",
 		.encoding = "base64",
-		.extensions = (char*[]){"oga", "ogg", "spx", 0},
+		.extensions = (const char*[]){"oga", "ogg", "spx", 0},
 		.registered = 1,
 	},
 
@@ -10742,21 +10742,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/s3m",
 		.encoding = "base64",
-		.extensions = (char*[]){"s3m", 0},
+		.extensions = (const char*[]){"s3m", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/silk",
 		.encoding = "base64",
-		.extensions = (char*[]){"sil", 0},
+		.extensions = (const char*[]){"sil", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/SMV",
 		.encoding = "base64",
-		.extensions = (char*[]){"smv", 0},
+		.extensions = (const char*[]){"smv", 0},
 		.registered = 1,
 	},
 
@@ -10903,14 +10903,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/vnd.dece.audio",
 		.encoding = "base64",
-		.extensions = (char*[]){"uva", "uvva", 0},
+		.extensions = (const char*[]){"uva", "uvva", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.digital-winds",
 		.encoding = "7bit",
-		.extensions = (char*[]){"eol", 0},
+		.extensions = (const char*[]){"eol", 0},
 		.registered = 1,
 	},
 
@@ -10980,21 +10980,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/vnd.dra",
 		.encoding = "base64",
-		.extensions = (char*[]){"dra", 0},
+		.extensions = (const char*[]){"dra", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.dts",
 		.encoding = "base64",
-		.extensions = (char*[]){"dts", 0},
+		.extensions = (const char*[]){"dts", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.dts.hd",
 		.encoding = "base64",
-		.extensions = (char*[]){"dtshd", 0},
+		.extensions = (const char*[]){"dtshd", 0},
 		.registered = 1,
 	},
 
@@ -11008,7 +11008,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/vnd.everad.plj",
 		.encoding = "base64",
-		.extensions = (char*[]){"plj", 0},
+		.extensions = (const char*[]){"plj", 0},
 		.registered = 1,
 	},
 
@@ -11022,49 +11022,49 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/vnd.lucent.voice",
 		.encoding = "base64",
-		.extensions = (char*[]){"lvp", 0},
+		.extensions = (const char*[]){"lvp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.ms-playready.media.pya",
 		.encoding = "base64",
-		.extensions = (char*[]){"pya", 0},
+		.extensions = (const char*[]){"pya", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.nokia.mobile-xmf",
 		.encoding = "base64",
-		.extensions = (char*[]){"mxmf", 0},
+		.extensions = (const char*[]){"mxmf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.nortel.vbk",
 		.encoding = "base64",
-		.extensions = (char*[]){"vbk", 0},
+		.extensions = (const char*[]){"vbk", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.nuera.ecelp4800",
 		.encoding = "base64",
-		.extensions = (char*[]){"ecelp4800", 0},
+		.extensions = (const char*[]){"ecelp4800", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.nuera.ecelp7470",
 		.encoding = "base64",
-		.extensions = (char*[]){"ecelp7470", 0},
+		.extensions = (const char*[]){"ecelp7470", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.nuera.ecelp9600",
 		.encoding = "base64",
-		.extensions = (char*[]){"ecelp9600", 0},
+		.extensions = (const char*[]){"ecelp9600", 0},
 		.registered = 1,
 	},
 
@@ -11078,7 +11078,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/vnd.qcelp",
 		.encoding = "base64",
-		.extensions = (char*[]){"qcp", 0},
+		.extensions = (const char*[]){"qcp", 0},
 		.registered = 1,
 	},
 
@@ -11092,14 +11092,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/vnd.rip",
 		.encoding = "base64",
-		.extensions = (char*[]){"rip", 0},
+		.extensions = (const char*[]){"rip", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "audio/vnd.sealedmedia.softseal.mpeg",
 		.encoding = "base64",
-		.extensions = (char*[]){"smp3", "smp", "s1m", 0},
+		.extensions = (const char*[]){"smp3", "smp", "s1m", 0},
 		.registered = 1,
 	},
 
@@ -11127,182 +11127,182 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "audio/webm",
 		.encoding = "base64",
-		.extensions = (char*[]){"weba", "webm", 0},
+		.extensions = (const char*[]){"weba", "webm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-aac",
 		.encoding = "base64",
-		.extensions = (char*[]){"aac", 0},
+		.extensions = (const char*[]){"aac", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-aiff",
 		.encoding = "base64",
-		.extensions = (char*[]){"aif", "aifc", "aiff", 0},
+		.extensions = (const char*[]){"aif", "aifc", "aiff", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-caf",
 		.encoding = "base64",
-		.extensions = (char*[]){"caf", 0},
+		.extensions = (const char*[]){"caf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-flac",
 		.encoding = "base64",
-		.extensions = (char*[]){"flac", 0},
+		.extensions = (const char*[]){"flac", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-matroska",
 		.encoding = "base64",
-		.extensions = (char*[]){"mka", 0},
+		.extensions = (const char*[]){"mka", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-midi",
 		.encoding = "base64",
-		.extensions = (char*[]){"mid", "midi", "kar", 0},
+		.extensions = (const char*[]){"mid", "midi", "kar", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-mpegurl",
 		.encoding = "base64",
-		.extensions = (char*[]){"m3u", 0},
+		.extensions = (const char*[]){"m3u", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-ms-wax",
 		.encoding = "base64",
-		.extensions = (char*[]){"wax", 0},
+		.extensions = (const char*[]){"wax", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-ms-wma",
 		.encoding = "base64",
-		.extensions = (char*[]){"wma", 0},
+		.extensions = (const char*[]){"wma", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-ms-wmv",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmv", 0},
+		.extensions = (const char*[]){"wmv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-pn-realaudio",
 		.encoding = "base64",
-		.extensions = (char*[]){"ra", "ram", 0},
+		.extensions = (const char*[]){"ra", "ram", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-pn-realaudio-plugin",
 		.encoding = "base64",
-		.extensions = (char*[]){"rmp", "rpm", 0},
+		.extensions = (const char*[]){"rmp", "rpm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-realaudio",
 		.encoding = "base64",
-		.extensions = (char*[]){"ra", 0},
+		.extensions = (const char*[]){"ra", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/x-wav",
 		.encoding = "base64",
-		.extensions = (char*[]){"wav", 0},
+		.extensions = (const char*[]){"wav", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "audio/xm",
 		.encoding = "base64",
-		.extensions = (char*[]){"xm", 0},
+		.extensions = (const char*[]){"xm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-cdx",
 		.encoding = "base64",
-		.extensions = (char*[]){"cdx", 0},
+		.extensions = (const char*[]){"cdx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-cif",
 		.encoding = "base64",
-		.extensions = (char*[]){"cif", 0},
+		.extensions = (const char*[]){"cif", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-cmdf",
 		.encoding = "base64",
-		.extensions = (char*[]){"cmdf", 0},
+		.extensions = (const char*[]){"cmdf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-cml",
 		.encoding = "base64",
-		.extensions = (char*[]){"cml", 0},
+		.extensions = (const char*[]){"cml", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-csml",
 		.encoding = "base64",
-		.extensions = (char*[]){"csml", 0},
+		.extensions = (const char*[]){"csml", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-pdb",
 		.encoding = "base64",
-		.extensions = (char*[]){"pdb", 0},
+		.extensions = (const char*[]){"pdb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "chemical/x-xyz",
 		.encoding = "base64",
-		.extensions = (char*[]){"xyz", 0},
+		.extensions = (const char*[]){"xyz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "drawing/dwf",
 		.encoding = "base64",
-		.extensions = (char*[]){"dwf", 0},
+		.extensions = (const char*[]){"dwf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/bmp",
 		.encoding = "base64",
-		.extensions = (char*[]){"bmp", 0},
+		.extensions = (const char*[]){"bmp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/cgm",
 		.encoding = "base64",
-		.extensions = (char*[]){"cgm", 0},
+		.extensions = (const char*[]){"cgm", 0},
 		.registered = 1,
 	},
 
@@ -11337,56 +11337,56 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/g3fax",
 		.encoding = "base64",
-		.extensions = (char*[]){"g3", 0},
+		.extensions = (const char*[]){"g3", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/gif",
 		.encoding = "base64",
-		.extensions = (char*[]){"gif", 0},
+		.extensions = (const char*[]){"gif", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/ief",
 		.encoding = "base64",
-		.extensions = (char*[]){"ief", 0},
+		.extensions = (const char*[]){"ief", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/jp2",
 		.encoding = "base64",
-		.extensions = (char*[]){"jp2", "jpg2", 0},
+		.extensions = (const char*[]){"jp2", "jpg2", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/jpeg",
 		.encoding = "base64",
-		.extensions = (char*[]){"jpeg", "jpg", "jpe", 0},
+		.extensions = (const char*[]){"jpeg", "jpg", "jpe", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/jpm",
 		.encoding = "base64",
-		.extensions = (char*[]){"jpm", "jpgm", 0},
+		.extensions = (const char*[]){"jpm", "jpgm", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/jpx",
 		.encoding = "base64",
-		.extensions = (char*[]){"jpx", "jpf", 0},
+		.extensions = (const char*[]){"jpx", "jpf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/ktx",
 		.encoding = "base64",
-		.extensions = (char*[]){"ktx", 0},
+		.extensions = (const char*[]){"ktx", 0},
 		.registered = 1,
 	},
 
@@ -11407,14 +11407,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/png",
 		.encoding = "base64",
-		.extensions = (char*[]){"png", 0},
+		.extensions = (const char*[]){"png", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/prs.btif",
 		.encoding = "base64",
-		.extensions = (char*[]){"btif", 0},
+		.extensions = (const char*[]){"btif", 0},
 		.registered = 1,
 	},
 
@@ -11435,14 +11435,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/sgi",
 		.encoding = "base64",
-		.extensions = (char*[]){"sgi", 0},
+		.extensions = (const char*[]){"sgi", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/svg+xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"svg", "svgz", 0},
+		.extensions = (const char*[]){"svg", "svgz", 0},
 		.registered = 1,
 	},
 
@@ -11456,14 +11456,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/targa",
 		.encoding = "base64",
-		.extensions = (char*[]){"tga", 0},
+		.extensions = (const char*[]){"tga", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/tiff",
 		.encoding = "base64",
-		.extensions = (char*[]){"tiff", "tif", 0},
+		.extensions = (const char*[]){"tiff", "tif", 0},
 		.registered = 1,
 	},
 
@@ -11477,7 +11477,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/vnd.adobe.photoshop",
 		.encoding = "base64",
-		.extensions = (char*[]){"psd", 0},
+		.extensions = (const char*[]){"psd", 0},
 		.registered = 1,
 	},
 
@@ -11498,91 +11498,91 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/vnd.dece.graphic",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvg", "uvi", "uvvg", "uvvi", 0},
+		.extensions = (const char*[]){"uvg", "uvi", "uvvg", "uvvi", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.dgn",
 		.encoding = "base64",
-		.extensions = (char*[]){"dgn", 0},
+		.extensions = (const char*[]){"dgn", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/vnd.djvu",
 		.encoding = "base64",
-		.extensions = (char*[]){"djvu", "djv", 0},
+		.extensions = (const char*[]){"djvu", "djv", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.dvb.subtitle",
 		.encoding = "base64",
-		.extensions = (char*[]){"sub", 0},
+		.extensions = (const char*[]){"sub", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.dwg",
 		.encoding = "base64",
-		.extensions = (char*[]){"dwg", 0},
+		.extensions = (const char*[]){"dwg", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.dxf",
 		.encoding = "base64",
-		.extensions = (char*[]){"dxf", 0},
+		.extensions = (const char*[]){"dxf", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.fastbidsheet",
 		.encoding = "base64",
-		.extensions = (char*[]){"fbs", 0},
+		.extensions = (const char*[]){"fbs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.fpx",
 		.encoding = "base64",
-		.extensions = (char*[]){"fpx", 0},
+		.extensions = (const char*[]){"fpx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.fst",
 		.encoding = "base64",
-		.extensions = (char*[]){"fst", 0},
+		.extensions = (const char*[]){"fst", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.fujixerox.edmics-mmr",
 		.encoding = "base64",
-		.extensions = (char*[]){"mmr", 0},
+		.extensions = (const char*[]){"mmr", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.fujixerox.edmics-rlc",
 		.encoding = "base64",
-		.extensions = (char*[]){"rlc", 0},
+		.extensions = (const char*[]){"rlc", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.globalgraphics.pgb",
 		.encoding = "base64",
-		.extensions = (char*[]){"pgb", 0},
+		.extensions = (const char*[]){"pgb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.microsoft.icon",
 		.encoding = "base64",
-		.extensions = (char*[]){"ico", 0},
+		.extensions = (const char*[]){"ico", 0},
 		.registered = 1,
 	},
 
@@ -11603,21 +11603,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/vnd.ms-modi",
 		.encoding = "base64",
-		.extensions = (char*[]){"mdi", 0},
+		.extensions = (const char*[]){"mdi", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.ms-photo",
 		.encoding = "base64",
-		.extensions = (char*[]){"wdp", 0},
+		.extensions = (const char*[]){"wdp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/vnd.net-fpx",
 		.encoding = "base64",
-		.extensions = (char*[]){"npx", 0},
+		.extensions = (const char*[]){"npx", 0},
 		.registered = 1,
 	},
 
@@ -11680,14 +11680,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/vnd.wap.wbmp",
 		.encoding = "base64",
-		.extensions = (char*[]){"wbmp", 0},
+		.extensions = (const char*[]){"wbmp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "image/vnd.xiff",
 		.encoding = "base64",
-		.extensions = (char*[]){"xif", 0},
+		.extensions = (const char*[]){"xif", 0},
 		.registered = 1,
 	},
 
@@ -11701,7 +11701,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/webp",
 		.encoding = "base64",
-		.extensions = (char*[]){"webp", 0},
+		.extensions = (const char*[]){"webp", 0},
 		.registered = 0,
 	},
 
@@ -11715,147 +11715,147 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/x-3ds",
 		.encoding = "base64",
-		.extensions = (char*[]){"3ds", 0},
+		.extensions = (const char*[]){"3ds", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-bmp",
 		.encoding = "base64",
-		.extensions = (char*[]){"bmp", 0},
+		.extensions = (const char*[]){"bmp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-cmu-raster",
 		.encoding = "base64",
-		.extensions = (char*[]){"ras", 0},
+		.extensions = (const char*[]){"ras", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-cmx",
 		.encoding = "base64",
-		.extensions = (char*[]){"cmx", 0},
+		.extensions = (const char*[]){"cmx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-compressed-xcf",
 		.encoding = "base64",
-		.extensions = (char*[]){"xcfbz2", "xcfgz", 0},
+		.extensions = (const char*[]){"xcfbz2", "xcfgz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-freehand",
 		.encoding = "base64",
-		.extensions = (char*[]){"fh", "fh4", "fh5", "fh7", "fhc", 0},
+		.extensions = (const char*[]){"fh", "fh4", "fh5", "fh7", "fhc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-hasselblad-3fr",
 		.encoding = "base64",
-		.extensions = (char*[]){"3fr", 0},
+		.extensions = (const char*[]){"3fr", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-icon",
 		.encoding = "base64",
-		.extensions = (char*[]){"ico", 0},
+		.extensions = (const char*[]){"ico", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-mrsid-image",
 		.encoding = "base64",
-		.extensions = (char*[]){"sid", 0},
+		.extensions = (const char*[]){"sid", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-ms-bmp",
 		.encoding = "base64",
-		.extensions = (char*[]){"bmp", 0},
+		.extensions = (const char*[]){"bmp", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-paintshoppro",
 		.encoding = "base64",
-		.extensions = (char*[]){"psp", "pspimage", 0},
+		.extensions = (const char*[]){"psp", "pspimage", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-pcx",
 		.encoding = "base64",
-		.extensions = (char*[]){"pcx", 0},
+		.extensions = (const char*[]){"pcx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-pict",
 		.encoding = "base64",
-		.extensions = (char*[]){"pct", "pic", 0},
+		.extensions = (const char*[]){"pct", "pic", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-portable-anymap",
 		.encoding = "base64",
-		.extensions = (char*[]){"pnm", 0},
+		.extensions = (const char*[]){"pnm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-portable-bitmap",
 		.encoding = "base64",
-		.extensions = (char*[]){"pbm", 0},
+		.extensions = (const char*[]){"pbm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-portable-graymap",
 		.encoding = "base64",
-		.extensions = (char*[]){"pgm", 0},
+		.extensions = (const char*[]){"pgm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-portable-pixmap",
 		.encoding = "base64",
-		.extensions = (char*[]){"ppm", 0},
+		.extensions = (const char*[]){"ppm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-rgb",
 		.encoding = "base64",
-		.extensions = (char*[]){"rgb", 0},
+		.extensions = (const char*[]){"rgb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-targa",
 		.encoding = "base64",
-		.extensions = (char*[]){"tga", 0},
+		.extensions = (const char*[]){"tga", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-tga",
 		.encoding = "base64",
-		.extensions = (char*[]){"tga", 0},
+		.extensions = (const char*[]){"tga", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-vnd.dgn",
 		.encoding = "base64",
-		.extensions = (char*[]){"dgn", 0},
+		.extensions = (const char*[]){"dgn", 0},
 		.registered = 0,
 	},
 
@@ -11869,35 +11869,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "image/x-xbitmap",
 		.encoding = "7bit",
-		.extensions = (char*[]){"xbm", 0},
+		.extensions = (const char*[]){"xbm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-xbm",
 		.encoding = "7bit",
-		.extensions = (char*[]){"xbm", 0},
+		.extensions = (const char*[]){"xbm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-xcf",
 		.encoding = "base64",
-		.extensions = (char*[]){"xcf", 0},
+		.extensions = (const char*[]){"xcf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-xpixmap",
 		.encoding = "8bit",
-		.extensions = (char*[]){"xpm", 0},
+		.extensions = (const char*[]){"xpm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "image/x-xwindowdump",
 		.encoding = "base64",
-		.extensions = (char*[]){"xwd", 0},
+		.extensions = (const char*[]){"xwd", 0},
 		.registered = 0,
 	},
 
@@ -12002,7 +12002,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "message/rfc822",
 		.encoding = "8bit",
-		.extensions = (char*[]){"eml", "mime", 0},
+		.extensions = (const char*[]){"eml", "mime", 0},
 		.registered = 1,
 	},
 
@@ -12058,28 +12058,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/iges",
 		.encoding = "base64",
-		.extensions = (char*[]){"igs", "iges", 0},
+		.extensions = (const char*[]){"igs", "iges", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "model/mesh",
 		.encoding = "base64",
-		.extensions = (char*[]){"msh", "mesh", "silo", 0},
+		.extensions = (const char*[]){"msh", "mesh", "silo", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "model/vnd.collada+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"dae", 0},
+		.extensions = (const char*[]){"dae", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "model/vnd.dwf",
 		.encoding = "base64",
-		.extensions = (char*[]){"dwf", 0},
+		.extensions = (const char*[]){"dwf", 0},
 		.registered = 1,
 	},
 
@@ -12093,7 +12093,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/vnd.gdl",
 		.encoding = "base64",
-		.extensions = (char*[]){"gdl", 0},
+		.extensions = (const char*[]){"gdl", 0},
 		.registered = 1,
 	},
 
@@ -12107,7 +12107,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/vnd.gtw",
 		.encoding = "base64",
-		.extensions = (char*[]){"gtw", 0},
+		.extensions = (const char*[]){"gtw", 0},
 		.registered = 1,
 	},
 
@@ -12121,7 +12121,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/vnd.mts",
 		.encoding = "base64",
-		.extensions = (char*[]){"mts", 0},
+		.extensions = (const char*[]){"mts", 0},
 		.registered = 1,
 	},
 
@@ -12135,14 +12135,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/vnd.parasolid.transmit.binary",
 		.encoding = "base64",
-		.extensions = (char*[]){"x_b", "xmt_bin", 0},
+		.extensions = (const char*[]){"x_b", "xmt_bin", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "model/vnd.parasolid.transmit.text",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"x_t", "xmt_txt", 0},
+		.extensions = (const char*[]){"x_t", "xmt_txt", 0},
 		.registered = 1,
 	},
 
@@ -12163,21 +12163,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/vnd.vtu",
 		.encoding = "base64",
-		.extensions = (char*[]){"vtu", 0},
+		.extensions = (const char*[]){"vtu", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "model/vrml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wrl", "vrml", 0},
+		.extensions = (const char*[]){"wrl", "vrml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "model/x3d+binary",
 		.encoding = "base64",
-		.extensions = (char*[]){"x3db", "x3dbz", 0},
+		.extensions = (const char*[]){"x3db", "x3dbz", 0},
 		.registered = 0,
 	},
 
@@ -12191,14 +12191,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "model/x3d+vrml",
 		.encoding = "base64",
-		.extensions = (char*[]){"x3dv", "x3dvz", 0},
+		.extensions = (const char*[]){"x3dv", "x3dvz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "model/x3d+xml",
 		.encoding = "base64",
-		.extensions = (char*[]){"x3d", "x3dz", 0},
+		.extensions = (const char*[]){"x3d", "x3dz", 0},
 		.registered = 1,
 	},
 
@@ -12366,35 +12366,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/cache-manifest",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"appcache", "manifest", 0},
+		.extensions = (const char*[]){"appcache", "manifest", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/calendar",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"ics", "ifb", 0},
+		.extensions = (const char*[]){"ics", "ifb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/comma-separated-values",
 		.encoding = "8bit",
-		.extensions = (char*[]){"csv", 0},
+		.extensions = (const char*[]){"csv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/css",
 		.encoding = "8bit",
-		.extensions = (char*[]){"css", 0},
+		.extensions = (const char*[]){"css", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/csv",
 		.encoding = "8bit",
-		.extensions = (char*[]){"csv", 0},
+		.extensions = (const char*[]){"csv", 0},
 		.registered = 1,
 	},
 
@@ -12464,14 +12464,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/html",
 		.encoding = "8bit",
-		.extensions = (char*[]){"html", "htm", "htmlx", "shtml", "htx", 0},
+		.extensions = (const char*[]){"html", "htm", "htmlx", "shtml", "htx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/javascript",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"js", 0},
+		.extensions = (const char*[]){"js", 0},
 		.registered = 1,
 	},
 
@@ -12499,7 +12499,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/n3",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"n3", 0},
+		.extensions = (const char*[]){"n3", 0},
 		.registered = 1,
 	},
 
@@ -12520,7 +12520,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/plain",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"txt", "asc", "c", "cc", "h", "hh", "cpp", "hpp", "dat", "hlp", "conf", "def", "doc", "in", "list", "log", "markdown", "md", "rst", "text", "textile", 0},
+		.extensions = (const char*[]){"txt", "asc", "c", "cc", "h", "hh", "cpp", "hpp", "dat", "hlp", "conf", "def", "doc", "in", "list", "log", "markdown", "md", "rst", "text", "textile", 0},
 		.registered = 1,
 	},
 
@@ -12534,14 +12534,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/prs.fallenstein.rst",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"rst", 0},
+		.extensions = (const char*[]){"rst", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/prs.lines.tag",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"dsc", 0},
+		.extensions = (const char*[]){"dsc", 0},
 		.registered = 1,
 	},
 
@@ -12576,14 +12576,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/richtext",
 		.encoding = "8bit",
-		.extensions = (char*[]){"rtx", 0},
+		.extensions = (const char*[]){"rtx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/rtf",
 		.encoding = "8bit",
-		.extensions = (char*[]){"rtf", 0},
+		.extensions = (const char*[]){"rtf", 0},
 		.registered = 1,
 	},
 
@@ -12611,7 +12611,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/sgml",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"sgml", "sgm", 0},
+		.extensions = (const char*[]){"sgml", "sgm", 0},
 		.registered = 1,
 	},
 
@@ -12625,21 +12625,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/tab-separated-values",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"tsv", 0},
+		.extensions = (const char*[]){"tsv", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/troff",
 		.encoding = "8bit",
-		.extensions = (char*[]){"t", "tr", "roff", "troff", "man", "me", "ms", 0},
+		.extensions = (const char*[]){"t", "tr", "roff", "troff", "man", "me", "ms", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/turtle",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"ttl", 0},
+		.extensions = (const char*[]){"ttl", 0},
 		.registered = 1,
 	},
 
@@ -12653,14 +12653,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/uri-list",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"uri", "uris", "urls", 0},
+		.extensions = (const char*[]){"uri", "uris", "urls", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vcard",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"vcard", 0},
+		.extensions = (const char*[]){"vcard", 0},
 		.registered = 1,
 	},
 
@@ -12681,28 +12681,28 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/vnd.curl",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"curl", 0},
+		.extensions = (const char*[]){"curl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.curl.dcurl",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"dcurl", 0},
+		.extensions = (const char*[]){"dcurl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/vnd.curl.mcurl",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"mcurl", 0},
+		.extensions = (const char*[]){"mcurl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/vnd.curl.scurl",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"scurl", 0},
+		.extensions = (const char*[]){"scurl", 0},
 		.registered = 0,
 	},
 
@@ -12723,7 +12723,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/vnd.dvb.subtitle",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"sub", 0},
+		.extensions = (const char*[]){"sub", 0},
 		.registered = 1,
 	},
 
@@ -12744,35 +12744,35 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/vnd.fly",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"fly", 0},
+		.extensions = (const char*[]){"fly", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.fmi.flexstor",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"flx", 0},
+		.extensions = (const char*[]){"flx", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.graphviz",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"gv", 0},
+		.extensions = (const char*[]){"gv", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.in3d.3dml",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"3dml", 0},
+		.extensions = (const char*[]){"3dml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.in3d.spot",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"spot", 0},
+		.extensions = (const char*[]){"spot", 0},
 		.registered = 1,
 	},
 
@@ -12814,7 +12814,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/vnd.net2phone.commcenter.command",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"ccc", 0},
+		.extensions = (const char*[]){"ccc", 0},
 		.registered = 1,
 	},
 
@@ -12835,7 +12835,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/vnd.sun.j2me.app-descriptor",
 		.encoding = "8bit",
-		.extensions = (char*[]){"jad", 0},
+		.extensions = (const char*[]){"jad", 0},
 		.registered = 1,
 	},
 
@@ -12849,133 +12849,133 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/vnd.wap.si",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"si", 0},
+		.extensions = (const char*[]){"si", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.wap.sl",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"sl", 0},
+		.extensions = (const char*[]){"sl", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.wap.wml",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"wml", 0},
+		.extensions = (const char*[]){"wml", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/vnd.wap.wmlscript",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"wmls", 0},
+		.extensions = (const char*[]){"wmls", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "text/x-asm",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"asm", "s", 0},
+		.extensions = (const char*[]){"asm", "s", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-c",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"c", "cc", "cpp", "cxx", "dic", "h", "hh", 0},
+		.extensions = (const char*[]){"c", "cc", "cpp", "cxx", "dic", "h", "hh", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-coffescript",
 		.encoding = "8bit",
-		.extensions = (char*[]){"coffee", 0},
+		.extensions = (const char*[]){"coffee", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-component",
 		.encoding = "8bit",
-		.extensions = (char*[]){"htc", 0},
+		.extensions = (const char*[]){"htc", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-fortran",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"f", "f77", "f90", "for", 0},
+		.extensions = (const char*[]){"f", "f77", "f90", "for", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-java-source",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"java", 0},
+		.extensions = (const char*[]){"java", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-nfo",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"nfo", 0},
+		.extensions = (const char*[]){"nfo", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-opml",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"opml", 0},
+		.extensions = (const char*[]){"opml", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-pascal",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"p", "pas", 0},
+		.extensions = (const char*[]){"p", "pas", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-rtf",
 		.encoding = "8bit",
-		.extensions = (char*[]){"rtf", 0},
+		.extensions = (const char*[]){"rtf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-setext",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"etx", 0},
+		.extensions = (const char*[]){"etx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-sfv",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"sfv", 0},
+		.extensions = (const char*[]){"sfv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-uuencode",
 		.encoding = "quoted-printable",
-		.extensions = (char*[]){"uu", 0},
+		.extensions = (const char*[]){"uu", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-vcalendar",
 		.encoding = "8bit",
-		.extensions = (char*[]){"vcs", 0},
+		.extensions = (const char*[]){"vcs", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/x-vcard",
 		.encoding = "8bit",
-		.extensions = (char*[]){"vcf", 0},
+		.extensions = (const char*[]){"vcf", 0},
 		.registered = 0,
 	},
 
@@ -12989,14 +12989,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "text/x-yaml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"yaml", "yml", 0},
+		.extensions = (const char*[]){"yaml", "yml", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "text/xml",
 		.encoding = "8bit",
-		.extensions = (char*[]){"xml", "dtd", 0},
+		.extensions = (const char*[]){"xml", "dtd", 0},
 		.registered = 1,
 	},
 
@@ -13017,7 +13017,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/3gpp",
 		.encoding = "base64",
-		.extensions = (char*[]){"3gp", "3gpp", 0},
+		.extensions = (const char*[]){"3gp", "3gpp", 0},
 		.registered = 1,
 	},
 
@@ -13031,7 +13031,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/3gpp2",
 		.encoding = "base64",
-		.extensions = (char*[]){"3g2", "3gpp2", 0},
+		.extensions = (const char*[]){"3g2", "3gpp2", 0},
 		.registered = 1,
 	},
 
@@ -13059,14 +13059,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/dl",
 		.encoding = "base64",
-		.extensions = (char*[]){"dl", 0},
+		.extensions = (const char*[]){"dl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/DV",
 		.encoding = "base64",
-		.extensions = (char*[]){"dv", 0},
+		.extensions = (const char*[]){"dv", 0},
 		.registered = 1,
 	},
 
@@ -13087,21 +13087,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/gl",
 		.encoding = "base64",
-		.extensions = (char*[]){"gl", 0},
+		.extensions = (const char*[]){"gl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/H261",
 		.encoding = "base64",
-		.extensions = (char*[]){"h261", 0},
+		.extensions = (const char*[]){"h261", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/H263",
 		.encoding = "base64",
-		.extensions = (char*[]){"h263", 0},
+		.extensions = (const char*[]){"h263", 0},
 		.registered = 1,
 	},
 
@@ -13122,7 +13122,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/H264",
 		.encoding = "base64",
-		.extensions = (char*[]){"h264", 0},
+		.extensions = (const char*[]){"h264", 0},
 		.registered = 1,
 	},
 
@@ -13157,7 +13157,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/JPEG",
 		.encoding = "base64",
-		.extensions = (char*[]){"jpgv", 0},
+		.extensions = (const char*[]){"jpgv", 0},
 		.registered = 1,
 	},
 
@@ -13171,14 +13171,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/jpm",
 		.encoding = "base64",
-		.extensions = (char*[]){"jpgm", "jpm", 0},
+		.extensions = (const char*[]){"jpgm", "jpm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/MJ2",
 		.encoding = "base64",
-		.extensions = (char*[]){"mj2", "mjp2", 0},
+		.extensions = (const char*[]){"mj2", "mjp2", 0},
 		.registered = 1,
 	},
 
@@ -13199,14 +13199,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/MP2T",
 		.encoding = "base64",
-		.extensions = (char*[]){"ts", 0},
+		.extensions = (const char*[]){"ts", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/mp4",
 		.encoding = "base64",
-		.extensions = (char*[]){"mp4", "mpg4", "f4v", "f4p", "mp4v", 0},
+		.extensions = (const char*[]){"mp4", "mpg4", "f4v", "f4p", "mp4v", 0},
 		.registered = 1,
 	},
 
@@ -13220,7 +13220,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/mpeg",
 		.encoding = "base64",
-		.extensions = (char*[]){"mp2", "mp3g", "mpe", "mpeg", "mpg", "m1v", "m2v", 0},
+		.extensions = (const char*[]){"mp2", "mp3g", "mpe", "mpeg", "mpg", "m1v", "m2v", 0},
 		.registered = 1,
 	},
 
@@ -13248,7 +13248,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/ogg",
 		.encoding = "base64",
-		.extensions = (char*[]){"ogg", "ogv", 0},
+		.extensions = (const char*[]){"ogg", "ogv", 0},
 		.registered = 1,
 	},
 
@@ -13269,7 +13269,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/quicktime",
 		.encoding = "base64",
-		.extensions = (char*[]){"qt", "mov", 0},
+		.extensions = (const char*[]){"qt", "mov", 0},
 		.registered = 1,
 	},
 
@@ -13339,14 +13339,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/vnd.dece.hd",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvh", "uvvh", 0},
+		.extensions = (const char*[]){"uvh", "uvvh", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.dece.mobile",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvm", "uvvm", 0},
+		.extensions = (const char*[]){"uvm", "uvvm", 0},
 		.registered = 1,
 	},
 
@@ -13360,21 +13360,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/vnd.dece.pd",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvp", "uvvp", 0},
+		.extensions = (const char*[]){"uvp", "uvvp", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.dece.sd",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvs", "uvvs", 0},
+		.extensions = (const char*[]){"uvs", "uvvs", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.dece.video",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvv", "uvvv", 0},
+		.extensions = (const char*[]){"uvv", "uvvv", 0},
 		.registered = 1,
 	},
 
@@ -13402,14 +13402,14 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/vnd.dvb.file",
 		.encoding = "base64",
-		.extensions = (char*[]){"dvb", 0},
+		.extensions = (const char*[]){"dvb", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.fvt",
 		.encoding = "base64",
-		.extensions = (char*[]){"fvt", 0},
+		.extensions = (const char*[]){"fvt", 0},
 		.registered = 1,
 	},
 
@@ -13479,21 +13479,21 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/vnd.mpegurl",
 		.encoding = "8bit",
-		.extensions = (char*[]){"mxu", "m4u", 0},
+		.extensions = (const char*[]){"mxu", "m4u", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.ms-playready.media.pyv",
 		.encoding = "base64",
-		.extensions = (char*[]){"pyv", 0},
+		.extensions = (const char*[]){"pyv", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.nokia.interleaved-multimedia",
 		.encoding = "base64",
-		.extensions = (char*[]){"nim", 0},
+		.extensions = (const char*[]){"nim", 0},
 		.registered = 1,
 	},
 
@@ -13507,7 +13507,7 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/vnd.objectvideo",
 		.encoding = "base64",
-		.extensions = (char*[]){"mp4", "m4v", 0},
+		.extensions = (const char*[]){"mp4", "m4v", 0},
 		.registered = 1,
 	},
 
@@ -13528,42 +13528,42 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/vnd.sealed.mpeg1",
 		.encoding = "base64",
-		.extensions = (char*[]){"s11", 0},
+		.extensions = (const char*[]){"s11", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.sealed.mpeg4",
 		.encoding = "base64",
-		.extensions = (char*[]){"smpg", "s14", 0},
+		.extensions = (const char*[]){"smpg", "s14", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.sealed.swf",
 		.encoding = "base64",
-		.extensions = (char*[]){"sswf", "ssw", 0},
+		.extensions = (const char*[]){"sswf", "ssw", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.sealedmedia.softseal.mov",
 		.encoding = "base64",
-		.extensions = (char*[]){"smov", "smo", "s1q", 0},
+		.extensions = (const char*[]){"smov", "smo", "s1q", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.uvvu.mp4",
 		.encoding = "base64",
-		.extensions = (char*[]){"uvu", "uvvu", 0},
+		.extensions = (const char*[]){"uvu", "uvvu", 0},
 		.registered = 1,
 	},
 
 	{
 		.content_type = "video/vnd.vivo",
 		.encoding = "base64",
-		.extensions = (char*[]){"viv", "vivo", 0},
+		.extensions = (const char*[]){"viv", "vivo", 0},
 		.registered = 1,
 	},
 
@@ -13577,182 +13577,182 @@ const struct MimeType mime_types[] = {
 	{
 		.content_type = "video/webm",
 		.encoding = "base64",
-		.extensions = (char*[]){"webm", 0},
+		.extensions = (const char*[]){"webm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-dl",
 		.encoding = "base64",
-		.extensions = (char*[]){"dl", 0},
+		.extensions = (const char*[]){"dl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-dv",
 		.encoding = "base64",
-		.extensions = (char*[]){"dv", 0},
+		.extensions = (const char*[]){"dv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-f4v",
 		.encoding = "base64",
-		.extensions = (char*[]){"f4v", 0},
+		.extensions = (const char*[]){"f4v", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-fli",
 		.encoding = "base64",
-		.extensions = (char*[]){"fli", 0},
+		.extensions = (const char*[]){"fli", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-flv",
 		.encoding = "base64",
-		.extensions = (char*[]){"flv", 0},
+		.extensions = (const char*[]){"flv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-gl",
 		.encoding = "base64",
-		.extensions = (char*[]){"gl", 0},
+		.extensions = (const char*[]){"gl", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ivf",
 		.encoding = "base64",
-		.extensions = (char*[]){"ivf", 0},
+		.extensions = (const char*[]){"ivf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-m4v",
 		.encoding = "base64",
-		.extensions = (char*[]){"m4v", 0},
+		.extensions = (const char*[]){"m4v", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-matroska",
 		.encoding = "base64",
-		.extensions = (char*[]){"mk3d", "mks", "mkv", 0},
+		.extensions = (const char*[]){"mk3d", "mks", "mkv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-mng",
 		.encoding = "base64",
-		.extensions = (char*[]){"mng", 0},
+		.extensions = (const char*[]){"mng", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-motion-jpeg",
 		.encoding = "base64",
-		.extensions = (char*[]){"mjpg", "mjpeg", 0},
+		.extensions = (const char*[]){"mjpg", "mjpeg", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ms-asf",
 		.encoding = "base64",
-		.extensions = (char*[]){"asf", "asx", 0},
+		.extensions = (const char*[]){"asf", "asx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ms-vob",
 		.encoding = "base64",
-		.extensions = (char*[]){"vob", 0},
+		.extensions = (const char*[]){"vob", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ms-wm",
 		.encoding = "base64",
-		.extensions = (char*[]){"wm", 0},
+		.extensions = (const char*[]){"wm", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ms-wmv",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmv", 0},
+		.extensions = (const char*[]){"wmv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ms-wmx",
 		.encoding = "base64",
-		.extensions = (char*[]){"wmx", 0},
+		.extensions = (const char*[]){"wmx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-ms-wvx",
 		.encoding = "base64",
-		.extensions = (char*[]){"wvx", 0},
+		.extensions = (const char*[]){"wvx", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-msvideo",
 		.encoding = "base64",
-		.extensions = (char*[]){"avi", 0},
+		.extensions = (const char*[]){"avi", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-sgi-movie",
 		.encoding = "base64",
-		.extensions = (char*[]){"movie", 0},
+		.extensions = (const char*[]){"movie", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "video/x-smv",
 		.encoding = "base64",
-		.extensions = (char*[]){"smv", 0},
+		.extensions = (const char*[]){"smv", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "x-chemical/x-pdb",
 		.encoding = "base64",
-		.extensions = (char*[]){"pdb", 0},
+		.extensions = (const char*[]){"pdb", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "x-chemical/x-xyz",
 		.encoding = "base64",
-		.extensions = (char*[]){"xyz", 0},
+		.extensions = (const char*[]){"xyz", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "x-conference/x-cooltalk",
 		.encoding = "base64",
-		.extensions = (char*[]){"ice", 0},
+		.extensions = (const char*[]){"ice", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "x-drawing/dwf",
 		.encoding = "base64",
-		.extensions = (char*[]){"dwf", 0},
+		.extensions = (const char*[]){"dwf", 0},
 		.registered = 0,
 	},
 
 	{
 		.content_type = "x-world/x-vrml",
 		.encoding = "base64",
-		.extensions = (char*[]){"wrl", "vrml", 0},
+		.extensions = (const char*[]){"wrl", "vrml", 0},
 		.registered = 0,
 	},
 

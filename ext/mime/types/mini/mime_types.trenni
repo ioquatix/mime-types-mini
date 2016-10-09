@@ -1,8 +1,8 @@
 
 struct MimeType {
-	char * const content_type;
-	char * const encoding;
-	char ** const extensions;
+	const char * const content_type;
+	const char * const encoding;
+	const char ** const extensions;
 	unsigned registered;
 };
 
