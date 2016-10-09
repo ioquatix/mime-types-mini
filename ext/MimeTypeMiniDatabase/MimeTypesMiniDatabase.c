@@ -1,23 +1,26 @@
 // Include the Ruby headers and goodies
 #include "ruby.h"
 
+#include "MimeTypes.h"
+
 // Defining a space for information and references about the module to be stored internally
-VALUE MimeTypesMini = Qnil;
+VALUE MimeTypesMiniDatabase = Qnil;
 
 // Prototype for the initialization method - Ruby calls this, not you
-void Init_MimeTypesMini();
+void Init_MimeTypesMiniDatabase();
 
 // Prototype for our method 'test1' - methods are prefixed by 'method_' here
 VALUE method_test1(VALUE self);
 
 // The initialization method for this module
-void Init_MimeTypesMini() {
+void Init_MimeTypesMiniDatabase() {
 	VALUE Mime = rb_define_module("Mime");
 	VALUE MimeTypes = rb_define_module_under(Mime, "Types");
+	VALUE MimeTypesMini = rb_define_module_under(MimeTypes, "Mini");
+
+	MimeTypesMiniDatabase = rb_define_module_under(MimeTypesMini, "Database");
 	
-	MimeTypesMini = rb_define_module("Mini");
-	
-	rb_define_method(MimeTypesMini, "test1", method_test1, 0);
+	rb_define_method(MimeTypesMiniDatabase, "test1", method_test1, 0);
 }
 
 // Our 'test1' method.. it simply returns a value of '10' for now.

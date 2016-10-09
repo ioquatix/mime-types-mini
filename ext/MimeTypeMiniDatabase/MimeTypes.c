@@ -6,7 +6,7 @@ struct MimeType {
 	unsigned registered;
 };
 
-const struct MimeType mime_types[] = {
+const struct MimeType MIME_TYPES[] = {
 
 	{
 		.content_type = "application/1d-interleaved-parityfec",

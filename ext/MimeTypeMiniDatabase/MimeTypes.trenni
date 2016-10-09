@@ -1,12 +1,5 @@
 
-struct MimeType {
-	const char * const content_type;
-	const char * const encoding;
-	const char ** const extensions;
-	unsigned registered;
-};
-
-const struct MimeType mime_types[] = {
+extern const struct MimeType MIME_TYPES[] = {
 <?r mime_types.each do |mime_type| 
 	content_type, encoding, extensions, registered = mime_type.values_at('content-type', 'encoding', 'extensions', 'registered')
 	?>
@@ -18,5 +11,3 @@ const struct MimeType mime_types[] = {
 	},
 <?r end ?>
 };
-
-
