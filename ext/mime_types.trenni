@@ -1,0 +1,22 @@
+
+struct MimeType {
+	char * const content_type;
+	char * const encoding;
+	char ** const extensions;
+	unsigned registered;
+};
+
+const struct MimeType mime_types[] = {
+<?r mime_types.each do |mime_type| 
+	content_type, encoding, extensions, registered = mime_type.values_at('content-type', 'encoding', 'extensions', 'registered')
+	?>
+	{
+		.content_type = #{content_type.inspect},
+		.encoding = #{encoding.inspect},
+		.extensions = #{extensions_struct(extensions)},
+		.registered = #{registered == true ? 1 : 0},
+	},
+<?r end ?>
+};
+
+

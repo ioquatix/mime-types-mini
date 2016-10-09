@@ -1,0 +1,28 @@
+
+require 'mime/types/data'
+require 'trenni'
+
+class TemplateState < Struct.new(:mime_types)
+	NULL = 'NULL'
+	
+	def extensions_struct(extensions)
+		if extensions
+			'(char*[]){' + (extensions.collect(&:inspect) + [0]).join(', ') + '}'
+		else
+			0
+		end
+	end
+end
+
+task :generate_database do
+	mime_types_json_path = File.join(MIME::Types::Data::PATH, "mime-types.json")
+	mime_types = JSON::load(File.open mime_types_json_path)
+	
+	template_path = File.expand_path("mime_types.trenni", __dir__)
+	template = Trenni::Template.load_file(template_path)
+	
+	template_state = TemplateState.new(mime_types)
+	result = template.to_string(template_state)
+	
+	File.write("mime_types.c", result)
+end
