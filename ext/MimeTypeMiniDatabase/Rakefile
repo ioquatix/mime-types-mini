@@ -4,18 +4,6 @@ require 'trenni'
 require 'json'
 require 'ostruct'
 
-class TemplateState < Struct.new(:mime_types)
-	NULL = 'NULL'
-	
-	def extensions_struct(extensions)
-		if extensions
-			'(const char*[]){' + (extensions.collect(&:inspect) + [0]).join(', ') + '}'
-		else
-			0
-		end
-	end
-end
-
 task :load_mime_types do
 	mime_types_json_path = File.join(MIME::Types::Data::PATH, "mime-types.json")
 	@mime_types = JSON::load(File.open mime_types_json_path)
@@ -45,17 +33,28 @@ task :generate_extensions => :generate_extensions_hashtable do
 	sh 'gperf', '-CD', '-t', 'Extensions.gperf', '--output-file', 'Extensions.h'
 end
 
-task :generate_code do
-	mime_types_json_path = File.join(MIME::Types::Data::PATH, "mime-types.json")
-	mime_types = JSON::load(File.open mime_types_json_path)
-	
+class TemplateState < Struct.new(:mime_types)
+	def extensions_struct(extensions)
+		if extensions
+			extensions.join(' ').inspect
+		else
+			0
+		end
+	end
+end
+
+task :generate_mime_types_hashtable => :load_mime_types  do
 	template_path = File.expand_path("MimeTypes.trenni", __dir__)
 	template = Trenni::Template.load_file(template_path)
 	
-	template_state = TemplateState.new(mime_types)
+	template_state = TemplateState.new(@mime_types)
 	result = template.to_string(template_state)
 	
-	File.write("MimeTypes.c", result)
+	File.write("MimeTypes.gperf", result)
 end
 
-task :default => :generate_code
+task :generate_mime_types => :generate_mime_types_hashtable do
+	sh 'gperf', '-C', '-t', 'MimeTypes.gperf', '--output-file', 'MimeTypes.h'
+end
+
+task :default => [:generate_extensions, :generate_mime_types]
