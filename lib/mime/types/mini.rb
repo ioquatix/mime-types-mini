@@ -21,7 +21,7 @@
 require "mime/types/mini/version"
 
 # Load the compiled module:
-require 'MimeTypeMiniDatabase'
+require 'MimeTypesMiniDatabase'
 
 module Mime
 	module Types
