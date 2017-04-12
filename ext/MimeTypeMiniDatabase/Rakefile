@@ -1,12 +1,18 @@
 require 'mkmf'
 require 'mime/types/data'
-require 'trenni'
+require 'erb'
 require 'json'
 require 'ostruct'
 
 task :load_mime_types do
 	mime_types_json_path = File.join(MIME::Types::Data::PATH, "mime-types.json")
 	@mime_types = JSON::load(File.open mime_types_json_path)
+end
+
+class TemplateBinding < OpenStruct
+	def get_binding
+	 	binding
+	end
 end
 
 task generate_extensions_hashtable: :load_mime_types do
@@ -20,11 +26,11 @@ task generate_extensions_hashtable: :load_mime_types do
 		end
 	end
 
-	template_path = File.expand_path("Extensions.trenni", __dir__)
-	template = Trenni::Template.load_file(template_path)
+	template_path = File.expand_path("Extensions.erb", __dir__)
+	template = ERB.new(File.read(template_path))
 
-	state = OpenStruct.new(extensions: all_extensions)
-	result = template.to_string(state)
+	state = TemplateBinding.new(extensions: all_extensions)
+	result = template.result(state.get_binding)
 
 	File.write("Extensions.gperf", result)
 end
@@ -33,7 +39,7 @@ task generate_extensions: :generate_extensions_hashtable do
 	sh 'gperf', '-CD', '-t', 'Extensions.gperf', '--output-file', 'Extensions.h'
 end
 
-class TemplateState < Struct.new(:mime_types)
+class TemplateState < TemplateBinding
 	def extensions_struct(extensions)
 		if extensions
 			extensions.join(' ').inspect
@@ -44,11 +50,11 @@ class TemplateState < Struct.new(:mime_types)
 end
 
 task generate_mime_types_hashtable: :load_mime_types  do
-	template_path = File.expand_path("MimeTypes.trenni", __dir__)
-	template = Trenni::Template.load_file(template_path)
+	template_path = File.expand_path("MimeTypes.erb", __dir__)
+	template = ERB.new(File.read(template_path))
 
-	template_state = TemplateState.new(@mime_types)
-	result = template.to_string(template_state)
+	template_state = TemplateState.new(mime_types: @mime_types)
+	result = template.result(template_state.get_binding)
 
 	File.write("MimeTypes.gperf", result)
 end

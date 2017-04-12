@@ -8,7 +8,5 @@ struct ContentTypeExtension {
 	const char * extension;
 	const char * content_type;
 };
-%%
-<?r extensions.each do |extension, content_type| ?>
-#{extension}, #{content_type.inspect}
-<?r end ?>
+%%<% extensions.each do |extension, content_type| %>
+<%= "#{extension}, #{content_type.inspect}" %><% end %>
