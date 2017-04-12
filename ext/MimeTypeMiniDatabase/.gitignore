@@ -1,0 +1,7 @@
+Extensions.gperf
+Extensions.h
+MimeTypes.gperf
+MimeTypes.h
+Makefile
+MimeTypesMiniDatabase.bundle
+MimeTypesMiniDatabase.o
