@@ -18,10 +18,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.extensions = "ext/MimeTypeMiniDatabase/Rakefile"
+  spec.extensions = "ext/MimeTypeMiniDatabase/extconf.rb"
 
   spec.add_dependency "mime-types-data", "~> 3.2016"
-  spec.add_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
